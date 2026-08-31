@@ -14,9 +14,9 @@ permissions:
 
 jobs:
   build-android:
-    name: Build Android FOSS Debug APK
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
+    name: Build Android ARM64 FOSS Debug APK
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
 
     steps:
       - name: Checkout source
@@ -31,35 +31,120 @@ jobs:
       - name: Set up Gradle cache
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Install required Android SDK components
+      - name: Install Android SDK components
         shell: bash
         run: |
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" \
             "platforms;android-35" \
-            "ndk;23.1.7779620"
+            "ndk;23.1.7779620" \
+            "cmake;3.22.1"
 
-      - name: Prepare local build configuration
+      - name: Prepare local configuration
         working-directory: apps/multiplatform
         shell: bash
-        run: cp local.properties.example local.properties
+        run: |
+          cp local.properties.example local.properties
 
-      - name: Normalize shell script line endings
+      - name: Normalize shell scripts
         shell: bash
         run: |
-          find . -type f \( -name "*.sh" -o -name "gradlew" \) -exec sed -i 's/\r$//' {} +
+          find . -type f \( -name "*.sh" -o -name "gradlew" \) \
+            -exec sed -i 's/\r$//' {} +
 
-      - name: Build FOSS debug APK
+      - name: Install Nix
+        shell: bash
+        run: |
+          sudo mkdir -p /nix
+          sudo chown -R "$USER" /nix
+
+          NIX_VERSION="nix-2.22.0"
+          NIX_URL="https://releases.nixos.org/nix/${NIX_VERSION}/install"
+          NIX_HASH="4fed7db867186c01ce2a2077da4a6950ed16232efbf78d0cd19700cff80559f9"
+
+          curl -sSf "$NIX_URL" -o /tmp/nix-install
+
+          echo "${NIX_HASH}  /tmp/nix-install" | sha256sum -c -
+
+          chmod +x /tmp/nix-install
+          /tmp/nix-install --no-daemon
+
+          mkdir -p "$RUNNER_TEMP/rx-nix"
+
+          cat > "$RUNNER_TEMP/rx-nix/nix.conf" <<'EOF'
+          sandbox = true
+          max-jobs = auto
+          experimental-features = nix-command flakes
+          EOF
+
+          echo "NIX_CONF_DIR=$RUNNER_TEMP/rx-nix" >> "$GITHUB_ENV"
+
+      - name: Build SimpleX native ARM64 library
+        shell: bash
+        run: |
+          source "$HOME/.nix-profile/etc/profile.d/nix.sh"
+
+          LIBS_DIR="$GITHUB_WORKSPACE/apps/multiplatform/common/src/commonMain/cpp/android/libs/arm64-v8a"
+
+          mkdir -p "$LIBS_DIR"
+
+          nix build ".#hydraJobs.x86_64-linux.aarch64-android:lib:simplex-chat"
+
+          unzip -o \
+            result/pkg-aarch64-android-libsimplex.zip \
+            -d "$LIBS_DIR"
+
+          rm -f result
+
+      - name: Build support native ARM64 library
+        shell: bash
+        run: |
+          source "$HOME/.nix-profile/etc/profile.d/nix.sh"
+
+          LIBS_DIR="$GITHUB_WORKSPACE/apps/multiplatform/common/src/commonMain/cpp/android/libs/arm64-v8a"
+
+          nix build ".#hydraJobs.x86_64-linux.aarch64-android:lib:support"
+
+          unzip -o \
+            result/pkg-aarch64-android-libsupport.zip \
+            -d "$LIBS_DIR"
+
+          rm -f result
+
+          echo "Native libraries:"
+          ls -lah "$LIBS_DIR"
+
+          test -f "$LIBS_DIR/libsimplex.so"
+          test -f "$LIBS_DIR/libsupport.so"
+
+      - name: Restrict baseline build to ARM64
+        working-directory: apps/multiplatform
+        shell: bash
+        run: |
+          sed -i.bak \
+            's/include(.*/include("arm64-v8a")/' \
+            android/build.gradle.kts
+
+          grep -n 'include("arm64-v8a")' android/build.gradle.kts
+
+      - name: Build Android APK
         working-directory: apps/multiplatform
         shell: bash
         run: |
           chmod +x gradlew
           ./gradlew assembleFossDebug --stacktrace
 
+      - name: Show generated APKs
+        shell: bash
+        run: |
+          find apps/multiplatform/android/build/outputs \
+            -type f -name "*.apk" -print
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: rx-msg-android-baseline
-          path: apps/multiplatform/android/build/outputs/apk/foss/debug/*.apk
+          name: rx-msg-android-arm64-baseline
+          path: apps/multiplatform/android/build/outputs/**/*.apk
           if-no-files-found: error
           retention-days: 14
