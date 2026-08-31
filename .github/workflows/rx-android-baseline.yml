@@ -41,10 +41,17 @@ jobs:
 
       - name: Prepare local build configuration
         working-directory: apps/multiplatform
+        shell: bash
         run: cp local.properties.example local.properties
+
+      - name: Normalize shell script line endings
+        shell: bash
+        run: |
+          find . -type f \( -name "*.sh" -o -name "gradlew" \) -exec sed -i 's/\r$//' {} +
 
       - name: Build FOSS debug APK
         working-directory: apps/multiplatform
+        shell: bash
         run: |
           chmod +x gradlew
           ./gradlew assembleFossDebug --stacktrace
