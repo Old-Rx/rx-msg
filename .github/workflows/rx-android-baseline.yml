@@ -53,64 +53,28 @@ jobs:
           find . -type f \( -name "*.sh" -o -name "gradlew" \) \
             -exec sed -i 's/\r$//' {} +
 
-      - name: Install Nix
+      - name: Prepare prebuilt native ARM64 libraries
         shell: bash
+        env:
+          SIMPLEX_ANDROID_VERSION: v7.0.1
+          SIMPLEX_ANDROID_APK_SHA256: d5b37d2eaf92d560181306973f359518b11048e3f69585d56ab5eed53a97f865
         run: |
-          sudo mkdir -p /nix
-          sudo chown -R "$USER" /nix
-
-          NIX_VERSION="nix-2.22.0"
-          NIX_URL="https://releases.nixos.org/nix/${NIX_VERSION}/install"
-          NIX_HASH="4fed7db867186c01ce2a2077da4a6950ed16232efbf78d0cd19700cff80559f9"
-
-          curl -sSf "$NIX_URL" -o /tmp/nix-install
-
-          echo "${NIX_HASH}  /tmp/nix-install" | sha256sum -c -
-
-          chmod +x /tmp/nix-install
-          /tmp/nix-install --no-daemon
-
-          mkdir -p "$RUNNER_TEMP/rx-nix"
-
-          cat > "$RUNNER_TEMP/rx-nix/nix.conf" <<'EOF'
-          sandbox = true
-          max-jobs = auto
-          experimental-features = nix-command flakes
-          EOF
-
-          echo "NIX_CONF_DIR=$RUNNER_TEMP/rx-nix" >> "$GITHUB_ENV"
-
-      - name: Build SimpleX native ARM64 library
-        shell: bash
-        run: |
-          source "$HOME/.nix-profile/etc/profile.d/nix.sh"
+          set -euo pipefail
 
           LIBS_DIR="$GITHUB_WORKSPACE/apps/multiplatform/common/src/commonMain/cpp/android/libs/arm64-v8a"
+          APK_PATH="$RUNNER_TEMP/simplex-aarch64-${SIMPLEX_ANDROID_VERSION}.apk"
+
+          curl --proto '=https' --tlsv1.2 --fail --location --retry 3 \
+            --output "$APK_PATH" \
+            "https://github.com/simplex-chat/simplex-chat/releases/download/${SIMPLEX_ANDROID_VERSION}/simplex-aarch64.apk"
+
+          echo "${SIMPLEX_ANDROID_APK_SHA256}  ${APK_PATH}" | sha256sum -c -
 
           mkdir -p "$LIBS_DIR"
-
-          nix build ".#hydraJobs.x86_64-linux.aarch64-android:lib:simplex-chat"
-
-          unzip -o \
-            result/pkg-aarch64-android-libsimplex.zip \
+          unzip -jo "$APK_PATH" \
+            lib/arm64-v8a/libsimplex.so \
+            lib/arm64-v8a/libsupport.so \
             -d "$LIBS_DIR"
-
-          rm -f result
-
-      - name: Build support native ARM64 library
-        shell: bash
-        run: |
-          source "$HOME/.nix-profile/etc/profile.d/nix.sh"
-
-          LIBS_DIR="$GITHUB_WORKSPACE/apps/multiplatform/common/src/commonMain/cpp/android/libs/arm64-v8a"
-
-          nix build ".#hydraJobs.x86_64-linux.aarch64-android:lib:support"
-
-          unzip -o \
-            result/pkg-aarch64-android-libsupport.zip \
-            -d "$LIBS_DIR"
-
-          rm -f result
 
           echo "Native libraries:"
           ls -lah "$LIBS_DIR"
