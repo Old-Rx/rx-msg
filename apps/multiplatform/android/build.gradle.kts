@@ -8,6 +8,17 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
+val rxSigningStoreFile = providers.gradleProperty("rxSigningStoreFile").orNull
+val rxSigningStorePassword = providers.gradleProperty("rxSigningStorePassword").orNull
+val rxSigningKeyAlias = providers.gradleProperty("rxSigningKeyAlias").orNull
+val rxSigningKeyPassword = providers.gradleProperty("rxSigningKeyPassword").orNull
+val rxSigningValues = listOf(rxSigningStoreFile, rxSigningStorePassword, rxSigningKeyAlias, rxSigningKeyPassword)
+val hasRxSigning = rxSigningValues.all { !it.isNullOrBlank() }
+
+if (rxSigningValues.any { !it.isNullOrBlank() } && !hasRxSigning) {
+    throw GradleException("RX-msg release signing requires all four rxSigning* Gradle properties")
+}
+
 android {
     compileSdk = 35
 
@@ -50,6 +61,17 @@ android {
         }
     }
 
+    signingConfigs {
+        if (hasRxSigning) {
+            create("rxRelease") {
+                storeFile = file(rxSigningStoreFile!!)
+                storePassword = rxSigningStorePassword
+                keyAlias = rxSigningKeyAlias
+                keyPassword = rxSigningKeyPassword
+            }
+        }
+    }
+
     buildTypes {
         debug {
             applicationIdSuffix = rootProject.extra["application_id.suffix"] as String
@@ -61,6 +83,9 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            if (hasRxSigning) {
+                signingConfig = signingConfigs.getByName("rxRelease")
+            }
         }
     }
     kotlinOptions {

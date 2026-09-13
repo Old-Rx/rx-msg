@@ -4,6 +4,9 @@
 *.dll
 *.so
 *.dylib
+*.jks
+*.keystore
+*.p12
 
 # Dependency directories (remove the comment below to include it)
 # vendor/

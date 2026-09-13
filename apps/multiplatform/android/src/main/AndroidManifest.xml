@@ -70,7 +70,8 @@
 
         <data android:scheme="simplex" />
       </intent-filter>
-      <intent-filter android:autoVerify="true">
+      <!-- RX-msg opens SimpleX protocol links without claiming ownership of upstream domains. -->
+      <intent-filter>
         <action android:name="android.intent.action.VIEW" />
 
         <category android:name="android.intent.category.DEFAULT" />
