@@ -126,7 +126,19 @@ jobs:
         shell: bash
         run: |
           chmod +x gradlew
-          ./gradlew assembleFossRelease --stacktrace
+          set -o pipefail
+          build_log="$RUNNER_TEMP/gradle-build.log"
+          if ! ./gradlew assembleFossRelease --stacktrace 2>&1 | tee "$build_log"; then
+            diagnostics=$(grep -E '(^e: |error:|FAILURE:|What went wrong|Execution failed|Compilation error|Unresolved reference)' "$build_log" | tail -n 40 || true)
+            if [[ -z "$diagnostics" ]]; then
+              diagnostics=$(tail -n 80 "$build_log")
+            fi
+            diagnostics=${diagnostics//'%'/'%25'}
+            diagnostics=${diagnostics//$'\r'/'%0D'}
+            diagnostics=${diagnostics//$'\n'/'%0A'}
+            echo "::error title=Gradle build failed::$diagnostics"
+            exit 1
+          fi
 
       - name: Verify and stage release candidate
         id: artifact
