@@ -19,7 +19,6 @@ import androidx.compose.ui.draw.*
 import androidx.compose.ui.graphics.*
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.platform.UriHandler
 import androidx.compose.ui.text.Placeholder
 import androidx.compose.ui.text.PlaceholderVerticalAlign
 import androidx.compose.ui.text.TextStyle
@@ -207,7 +206,7 @@ private fun BadgeGlyph(badge: LocalBadge, modifier: Modifier, onBadgeClick: (() 
   }
 }
 
-fun showBadgeInfoAlert(name: String, badge: LocalBadge, uriHandler: UriHandler) {
+fun showBadgeInfoAlert(name: String, badge: LocalBadge) {
   // a verified badge's type is signed and can't be faked, so the real (possibly unknown) type name is the title
   val title = badge.badge.badgeType.text.replaceFirstChar { it.uppercase() }
   when {
@@ -222,12 +221,9 @@ fun showBadgeInfoAlert(name: String, badge: LocalBadge, uriHandler: UriHandler) 
         text = generalGetString(MR.strings.badge_unknown_key_desc)
       )
     badge.badge.badgeType is BadgeType.Investor ->
-      AlertManager.shared.showAlertDialog(
+      AlertManager.shared.showAlertMsg(
         title = title,
-        text = String.format(generalGetString(MR.strings.badge_invested), name),
-        confirmText = generalGetString(MR.strings.ok),
-        dismissText = generalGetString(MR.strings.learn_more),
-        onDismiss = { uriHandler.openUriCatching("https://simplex.chat/crowdfunding") }
+        text = String.format(generalGetString(MR.strings.badge_invested), name)
       )
     else -> {
       // Supporter, Legend and unknown types use the supporter wording

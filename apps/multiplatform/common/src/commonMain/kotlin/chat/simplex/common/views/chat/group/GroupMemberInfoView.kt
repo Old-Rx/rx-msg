@@ -18,7 +18,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalClipboardManager
-import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.*
 import dev.icerock.moko.resources.compose.painterResource
 import dev.icerock.moko.resources.compose.stringResource
@@ -743,7 +742,6 @@ fun GroupMemberInfoHeader(member: GroupMember) {
       }
     }
     val nameFontSize = MaterialTheme.typography.h1.fontSize
-    val uriHandler = LocalUriHandler.current
     val inlineContent: Map<String, InlineTextContent> = buildMap {
       put(
         "shieldIcon",
@@ -754,7 +752,7 @@ fun GroupMemberInfoHeader(member: GroupMember) {
         }
       )
       if (badge != null) {
-        put("nameBadge", nameBadgeInline(badge, nameFontSize) { showBadgeInfoAlert(displayName, badge, uriHandler) })
+        put("nameBadge", nameBadgeInline(badge, nameFontSize) { showBadgeInfoAlert(displayName, badge) })
       }
     }
     val clipboard = LocalClipboardManager.current

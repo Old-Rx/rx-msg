@@ -727,7 +727,6 @@ fun ChatInfoHeader(cInfo: ChatInfo, contact: Contact) {
       }
     }
     val nameFontSize = MaterialTheme.typography.h1.fontSize
-    val uriHandler = LocalUriHandler.current
     val inlineContent: Map<String, InlineTextContent> = buildMap {
       put(
         "shieldIcon",
@@ -738,7 +737,7 @@ fun ChatInfoHeader(cInfo: ChatInfo, contact: Contact) {
         }
       )
       if (badge != null) {
-        put("nameBadge", nameBadgeInline(badge, nameFontSize) { showBadgeInfoAlert(displayName, badge, uriHandler) })
+        put("nameBadge", nameBadgeInline(badge, nameFontSize) { showBadgeInfoAlert(displayName, badge) })
       }
     }
     val clipboard = LocalClipboardManager.current
