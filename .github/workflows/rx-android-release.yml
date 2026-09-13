@@ -27,16 +27,16 @@ jobs:
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Java 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
 
       - name: Set up Gradle cache
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v6
 
       - name: Install Android SDK components
         shell: bash
@@ -153,7 +153,7 @@ jobs:
             exit 1
           fi
 
-          version_name=$(sed -n 's/^android.version_name=//p' apps/multiplatform/gradle.properties)
+          version_name=$(sed -n 's/^android.version_name=//p' apps/multiplatform/gradle.properties | tr -d '\r')
           mkdir -p dist
           output="dist/rx-msg-${version_name}-arm64-${SIGNING_LABEL}.apk"
           cp "${release_apks[0]}" "$output"
@@ -183,7 +183,7 @@ jobs:
         run: rm -f "$RUNNER_TEMP/rx-msg-release.jks"
 
       - name: Upload release candidate
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ steps.artifact.outputs.name }}
           path: dist/
