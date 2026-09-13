@@ -163,7 +163,7 @@ jobs:
             fail "Android APK inspection tools were not found."
           fi
 
-          verification_output=$("$apksigner_path" verify --verbose --print-certs "$output")
+          verification_output=$("$apksigner_path" verify --verbose --print-certs "$output" 2>&1)
           printf '%s\n' "$verification_output"
           expected_cert_sha256="0c9e5dcabaabe47a7bdec4e90e0ea5877c2f8420f396d376ca5179ee9334df15"
           actual_cert_sha256=$(
@@ -193,7 +193,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
           [[ "$actual_cert_sha256" == "$expected_cert_sha256" ]] ||
-            fail "Signing certificate SHA-256 does not match the pinned RX-msg release identity."
+            fail "Signing certificate SHA-256 mismatch: expected $expected_cert_sha256, got ${actual_cert_sha256:-not-reported}."
           [[ "$package_line" == *"name='com.oldrx.rxmsg'"* ]] ||
             fail "APK package name is not com.oldrx.rxmsg: $package_line"
           [[ "$package_line" == *"versionCode='$version_code'"* ]] ||
