@@ -8,11 +8,6 @@ on:
         required: false
         default: ""
         type: string
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/rx-android-release.yml"
 
 permissions:
   contents: write
@@ -226,7 +221,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
-      - name: Create draft prerelease
+      - name: Create or refresh draft prerelease
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag != '' }}
         shell: bash
         env:
@@ -239,11 +234,6 @@ jobs:
             echo "Release tag must match vMAJOR.MINOR.PATCH-rx.NUMBER." >&2
             exit 1
           fi
-          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            echo "Release $RELEASE_TAG already exists; refusing to replace it." >&2
-            exit 1
-          fi
-
           notes="$RUNNER_TEMP/rx-msg-release-notes.md"
           printf '%s\n' \
             "First RX-msg Android preview, based on the SimpleX Chat 7.0.1 codebase." \
@@ -252,16 +242,39 @@ jobs:
             "- Android package: com.oldrx.rxmsg" \
             "- RX-msg product name, launcher icon, and product-facing UI" \
             "- Automated checks for package identity, version, ARM64 native libraries, signature certificate, and SHA-256 checksum" \
+            "- Source attribution: https://github.com/${GITHUB_REPOSITORY}/blob/${GITHUB_SHA}/NOTICE.md" \
             "" \
             "This is a draft prerelease pending installation and messaging smoke tests on a physical Android device." \
             > "$notes"
 
-          gh release create "$RELEASE_TAG" \
-            dist/*.apk \
-            dist/SHA256SUMS \
-            --repo "$GITHUB_REPOSITORY" \
-            --target "$GITHUB_SHA" \
-            --title "RX-msg ${RELEASE_TAG#v}" \
-            --notes-file "$notes" \
-            --draft \
-            --prerelease
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            is_draft=$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft --jq '.isDraft')
+            if [[ "$is_draft" != "true" ]]; then
+              echo "Release $RELEASE_TAG is already published; refusing to modify it." >&2
+              exit 1
+            fi
+
+            # The Actions artifact uploaded above remains a recoverable copy if refreshing an asset fails.
+            gh release upload "$RELEASE_TAG" \
+              dist/*.apk \
+              dist/SHA256SUMS \
+              --repo "$GITHUB_REPOSITORY" \
+              --clobber
+            gh release edit "$RELEASE_TAG" \
+              --repo "$GITHUB_REPOSITORY" \
+              --target "$GITHUB_SHA" \
+              --title "RX-msg ${RELEASE_TAG#v}" \
+              --notes-file "$notes" \
+              --draft \
+              --prerelease
+          else
+            gh release create "$RELEASE_TAG" \
+              dist/*.apk \
+              dist/SHA256SUMS \
+              --repo "$GITHUB_REPOSITORY" \
+              --target "$GITHUB_SHA" \
+              --title "RX-msg ${RELEASE_TAG#v}" \
+              --notes-file "$notes" \
+              --draft \
+              --prerelease
+          fi
