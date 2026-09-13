@@ -139,12 +139,16 @@ jobs:
         run: |
           set -euo pipefail
 
+          fail() {
+            echo "::error::$1"
+            exit 1
+          }
+
           mapfile -t release_apks < <(find apps/multiplatform/android/build/outputs/apk \
             -type f -name '*arm64-v8a*release*.apk' | sort)
           if [[ "${#release_apks[@]}" -ne 1 ]]; then
-            printf 'Expected one ARM64 release APK, found %s:\n' "${#release_apks[@]}" >&2
             printf '%s\n' "${release_apks[@]}" >&2
-            exit 1
+            fail "Expected one ARM64 release APK, found ${#release_apks[@]}."
           fi
 
           version_name=$(sed -n 's/^android.version_name=//p' apps/multiplatform/gradle.properties | tr -d '\r')
@@ -156,32 +160,55 @@ jobs:
           apksigner_path=$(find "$ANDROID_HOME/build-tools" -type f -name apksigner | sort -V | tail -n 1)
           aapt_path=$(find "$ANDROID_HOME/build-tools" -type f -name aapt | sort -V | tail -n 1)
           if [[ -z "$apksigner_path" || -z "$aapt_path" ]]; then
-            echo "Android APK inspection tools were not found." >&2
-            exit 1
+            fail "Android APK inspection tools were not found."
           fi
 
           verification_output=$("$apksigner_path" verify --verbose --print-certs "$output")
           printf '%s\n' "$verification_output"
           expected_cert_sha256="0c9e5dcabaabe47a7bdec4e90e0ea5877c2f8420f396d376ca5179ee9334df15"
-          grep -F "Signer #1 certificate SHA-256 digest: $expected_cert_sha256" <<< "$verification_output"
+          actual_cert_sha256=$(
+            sed -n 's/^Signer #1 certificate SHA-256 digest: //p' <<< "$verification_output" |
+              head -n 1 |
+              tr -d ':\r' |
+              tr '[:upper:]' '[:lower:]'
+          )
 
           badging=$("$aapt_path" dump badging "$output")
-          grep -F "package: name='com.oldrx.rxmsg'" <<< "$badging"
-          grep -F "versionCode='$version_code'" <<< "$badging"
-          grep -F "versionName='$version_name'" <<< "$badging"
-          grep -F "application-label:'RX-msg'" <<< "$badging"
+          package_line=$(grep -m 1 '^package:' <<< "$badging" || true)
+          application_label_line=$(grep -m 1 '^application-label:' <<< "$badging" || true)
 
+          apk_entries=$(unzip -Z1 "$output")
           mapfile -t native_abis < <(
-            unzip -Z1 "$output" |
-              awk -F/ '/^lib\/[^/]+\/[^/]+\.so$/ {print $2}' |
+            awk -F/ '/^lib\/[^/]+\/[^/]+\.so$/ {print $2}' <<< "$apk_entries" |
               sort -u
           )
+
+          {
+            echo "### RX-msg Android release gate"
+            echo
+            echo "- Package metadata: \`$package_line\`"
+            echo "- Application label: \`$application_label_line\`"
+            echo "- Native ABIs: \`${native_abis[*]}\`"
+            echo "- Signing certificate SHA-256: \`$actual_cert_sha256\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          [[ "$actual_cert_sha256" == "$expected_cert_sha256" ]] ||
+            fail "Signing certificate SHA-256 does not match the pinned RX-msg release identity."
+          [[ "$package_line" == *"name='com.oldrx.rxmsg'"* ]] ||
+            fail "APK package name is not com.oldrx.rxmsg: $package_line"
+          [[ "$package_line" == *"versionCode='$version_code'"* ]] ||
+            fail "APK versionCode is not $version_code: $package_line"
+          [[ "$package_line" == *"versionName='$version_name'"* ]] ||
+            fail "APK versionName is not $version_name: $package_line"
+          [[ "$application_label_line" == "application-label:'RX-msg'" ]] ||
+            fail "APK application label is not RX-msg: $application_label_line"
           if [[ "${native_abis[*]}" != "arm64-v8a" ]]; then
-            printf 'Expected only arm64-v8a native libraries, found: %s\n' "${native_abis[*]}" >&2
-            exit 1
+            fail "Expected only arm64-v8a native libraries, found: ${native_abis[*]}"
           fi
-          unzip -Z1 "$output" | grep -Fx 'lib/arm64-v8a/libsimplex.so'
-          unzip -Z1 "$output" | grep -Fx 'lib/arm64-v8a/libsupport.so'
+          grep -Fxq 'lib/arm64-v8a/libsimplex.so' <<< "$apk_entries" ||
+            fail "APK is missing lib/arm64-v8a/libsimplex.so."
+          grep -Fxq 'lib/arm64-v8a/libsupport.so' <<< "$apk_entries" ||
+            fail "APK is missing lib/arm64-v8a/libsupport.so."
 
           sha256sum "$output" > dist/SHA256SUMS
           echo "name=rx-msg-android-arm64-release-signed" >> "$GITHUB_OUTPUT"
