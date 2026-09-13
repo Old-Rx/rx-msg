@@ -32,7 +32,7 @@
     <string name="abort_switch_receiving_address_desc">Промяната на адреса ще бъде прекъсната. Ще се използва старият адрес за получаване.</string>
     <string name="accept_contact_button">Приеми</string>
     <string name="accept_contact_incognito_button">Приеми инкогнито</string>
-    <string name="about_simplex_chat">За SimpleX Chat</string>
+    <string name="about_simplex_chat">За RX-msg</string>
     <string name="smp_servers_preset_add">Добави предварително зададени сървъри</string>
     <string name="smp_servers_add_to_another_device">Добави към друго устройство</string>
     <string name="network_settings">Разширени мрежови настройки</string>
@@ -49,7 +49,7 @@
     <string name="color_primary_variant">Допълнителен акцент</string>
     <string name="v4_2_group_links_desc">Админите могат да създадат линкове за присъединяване към групи.</string>
     <string name="if_you_cannot_meet_in_person_show_QR_in_video_call_or_via_another_channel"><![CDATA[Ако не можете да се срещнете лично, <b>покажете QR кода във видеоразговора</b> или споделете линка.]]></string>
-    <string name="open_simplex_chat_to_accept_call">Отворете SimpleX Chat, за да приемете повикването</string>
+    <string name="open_simplex_chat_to_accept_call">Отворете RX-msg, за да приемете повикването</string>
     <string name="v4_6_audio_video_calls_descr">Поддръжка на bluetooth и други подобрения.</string>
     <string name="relay_server_protects_ip">Relay сървърът защитава вашия IP адрес, но може да наблюдава продължителността на разговора.</string>
     <string name="periodic_notifications_desc">Приложението изтегля нови съобщения периодично - това използва няколко процента от батерията на ден. Приложението не използва push известия — данни от вашето устройство не се изпращат до сървърите.</string>
@@ -106,7 +106,7 @@
     <string name="if_you_cannot_meet_in_person_scan_QR_in_video_call_or_ask_for_invitation_link"><![CDATA[Ако не можете да се срещнете лично, можете <b>да сканирате QR код във видеоразговора</b> или вашият контакт може да сподели линк за покана.]]></string>
     <string name="notifications_mode_service_desc">Услугата във фонов режим винаги работи – известията ще се показват веднага щом съобщенията са налични.</string>
     <string name="it_can_disabled_via_settings_notifications_still_shown"><![CDATA[<b>Може да бъде деактивирано през настройките</b> – известията ще продължат да се показват, докато приложението работи.]]></string>
-    <string name="ntf_channel_calls">SimpleX Chat разговори</string>
+    <string name="ntf_channel_calls">RX-msg разговори</string>
     <string name="notifications_mode_periodic">Започва периодично</string>
     <string name="database_initialization_error_title">Базата данни не може да се стартира</string>
     <string name="notification_preview_somebody">Контактът е скрит:</string>
@@ -214,9 +214,9 @@
     <string name="chat_is_stopped_indication">Чатът е спрян</string>
     <string name="v4_4_verify_connection_security_desc">Сравнете кодовете за сигурност с вашите контакти.</string>
     <string name="self_destruct_passcode_enabled">Кодът за достъп за самоунищожение е активиран!</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">Идентификацията на устройството е деактивирано. Изключване на SimpleX заключване.</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Идентификацията на устройството не е активирана. Можете да включите SimpleX заключване през Настройки, след като активирате идентификацията на устройството.</string>
-    <string name="auth_simplex_lock_turned_on">SimpleX заключване е включено</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">Идентификацията на устройството е деактивирано. Изключване на RX-msg заключване.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Идентификацията на устройството не е активирана. Можете да включите RX-msg заключване през Настройки, след като активирате идентификацията на устройството.</string>
+    <string name="auth_simplex_lock_turned_on">RX-msg заключване е включено</string>
     <string name="connection_error_auth">Грешка при свързване</string>
     <string name="display_name_connecting">свързване…</string>
     <string name="switch_receiving_address">Промени адреса за получаване</string>
@@ -263,16 +263,16 @@
     <string name="la_enter_app_passcode">Въведете kодa за достъп</string>
     <string name="la_no_app_password">Приложението няма kод за достъп</string>
     <string name="la_lock_mode_passcode">Въвеждане на код за достъп</string>
-    <string name="la_notice_title_simplex_lock">SimpleX заключване</string>
+    <string name="la_notice_title_simplex_lock">RX-msg заключване</string>
     <string name="la_change_app_passcode">Промени kодa за достъп</string>
-    <string name="la_lock_mode">Режим на SimpleX заключване</string>
+    <string name="la_lock_mode">Режим на RX-msg заключване</string>
     <string name="la_lock_mode_system">Системна идентификация</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">За да защитите информацията си, включете SimpleX заключване.
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">За да защитите информацията си, включете RX-msg заключване.
 \nЩе бъдете подканени да извършите идентификация, преди тази функция да бъде активирана.</string>
-    <string name="auth_disable_simplex_lock">Деактивирай SimpleX заключване</string>
-    <string name="auth_enable_simplex_lock">Активирай SimpleX заключване</string>
-    <string name="lock_not_enabled">SimpleX заключване не е активирано!</string>
-    <string name="you_can_turn_on_lock">Можете да включите SimpleX заключване през Настройки.</string>
+    <string name="auth_disable_simplex_lock">Деактивирай RX-msg заключване</string>
+    <string name="auth_enable_simplex_lock">Активирай RX-msg заключване</string>
+    <string name="lock_not_enabled">RX-msg заключване не е активирано!</string>
+    <string name="you_can_turn_on_lock">Можете да включите RX-msg заключване през Настройки.</string>
     <string name="auth_confirm_credential">Потвърдете вашите идентификационни данни</string>
     <string name="your_chats">Чатове</string>
     <string name="chat_with_developers">Чат с разработчиците</string>
@@ -290,7 +290,7 @@
     <string name="connection_request_sent">Заявката за връзка е изпратена!</string>
     <string name="smp_servers_check_address">Проверете адреса на сървъра и опитайте отново.</string>
     <string name="clear_verification">Изчисти проверката</string>
-    <string name="chat_lock">SimpleX заключване</string>
+    <string name="chat_lock">RX-msg заключване</string>
     <string name="chat_console">Конзола</string>
     <string name="network_session_mode_user">Чат профил</string>
     <string name="configure_ICE_servers">Конфигурирай ICE сървъри</string>
@@ -645,7 +645,7 @@
     <string name="icon_descr_help">помощ</string>
     <string name="settings_section_title_help">Помощ</string>
     <string name="email_invite_body">Здравей,
-\nСвържи се с мен през SimpleX Chat: %s</string>
+\nСвържи се с мен през RX-msg: %s</string>
     <string name="group_members_can_add_message_reactions">Членовете могат да добавят реакции към съобщенията.</string>
     <string name="group_members_can_delete">Членовете могат необратимо да изтриват изпратените съобщения. (24 часа)</string>
     <string name="group_members_can_send_voice">Членовете могат да изпращат гласови съобщения.</string>
@@ -799,7 +799,7 @@
 \nМоля, обърнете внимание: няма да можете да се свържете със сървърите без .onion адрес.</string>
     <string name="network_use_onion_hosts_prefer_desc">Ще се използват Onion хостове, когато са налични.</string>
     <string name="network_use_onion_hosts_no_desc">Няма се използват Onion хостове.</string>
-    <string name="email_invite_subject">Нека да поговорим в SimpleX Chat</string>
+    <string name="email_invite_subject">Нека да поговорим в RX-msg</string>
     <string name="password_to_show">Парола за показване</string>
     <string name="read_more_in_github_with_link"><![CDATA[Прочетете повече в нашето <font color="#0088ff">GitHub хранилище</font>.]]></string>
     <string name="onboarding_notifications_mode_off">Когато приложението работи</string>
@@ -953,8 +953,8 @@
     <string name="periodic_notifications_disabled">Периодичните известия са деактивирани!</string>
     <string name="simplex_service_notification_text">Получаване на съобщения…</string>
     <string name="notifications_mode_off">Работи, когато приложението е отворено</string>
-    <string name="simplex_service_notification_title">Simplex Chat услуга</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[За подобряване на поверителността <b>SimpleX работи във фонов режим</b> вместо да използва push известия.]]></string>
+    <string name="simplex_service_notification_title">RX-msg услуга</string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[За подобряване на поверителността <b>RX-msg работи във фонов режим</b> вместо да използва push известия.]]></string>
     <string name="enter_passphrase_notification_desc">За да получавате известия, моля, въведете паролата на базата данни</string>
     <string name="auth_log_in_using_credential">Влезте с вашите идентификационни данни</string>
     <string name="message_delivery_error_title">Грешка при доставката на съобщението</string>
@@ -1114,7 +1114,7 @@
     <string name="sender_may_have_deleted_the_connection_request">Подателят може да е изтрил заявката за връзка.</string>
     <string name="error_smp_test_server_auth">Сървърът изисква оторизация за създаване на опашки, проверете паролата</string>
     <string name="error_xftp_test_server_auth">Сървърът изисква оторизация за качване, проверете паролата</string>
-    <string name="ntf_channel_messages">SimpleX Chat съобщения</string>
+    <string name="ntf_channel_messages">RX-msg съобщения</string>
     <string name="save_verb">Запази</string>
     <string name="search_verb">Търсене</string>
     <string name="sent_message">Изпратено съобщение</string>
@@ -1152,7 +1152,7 @@
     <string name="color_title">Заглавие</string>
     <string name="to_share_with_your_contact">(за споделяне с вашия контакт)</string>
     <string name="alert_message_no_group">Тази група вече не съществува.</string>
-    <string name="settings_section_title_support">Подкрепете SimpleX Chat</string>
+    <string name="settings_section_title_support">Подкрепете RX-msg</string>
     <string name="contact_sent_large_file">Вашият контакт изпрати файл, който е по-голям от поддържания в момента максимален размер (%1$s).</string>
     <string name="in_developing_desc">Тази функция все още не се поддържа. Опитайте следващата версия.</string>
     <string name="tap_to_start_new_chat">Докосни за започване на нов чат</string>
@@ -1186,7 +1186,7 @@
     <string name="database_initialization_error_desc">Базата данни не работи правилно. Докоснете, за да научите повече</string>
     <string name="image_decoding_exception_desc">Изображението не може да бъде декодирано. Моля, опитайте с друго изображение или се свържете с разработчиците.</string>
     <string name="chat_help_tap_button">Докосни бутона</string>
-    <string name="thank_you_for_installing_simplex">Благодарим Ви, че инсталирахте SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">Благодарим Ви, че инсталирахте RX-msg!</string>
     <string name="save_and_notify_contacts">Запази и уведоми контактите</string>
     <string name="next_generation_of_private_messaging">Бъдещето на комуникацията</string>
     <string name="first_platform_without_user_ids">Няма потребителски идентификатори.</string>
@@ -1332,7 +1332,7 @@
     <string name="connect_use_current_profile">Използвай текущия профил</string>
     <string name="paste_the_link_you_received_to_connect_with_your_contact">Поставете линка, който сте получили, за да се свържете с вашия контакт…</string>
     <string name="connect__your_profile_will_be_shared">Вашият профил %1$s ще бъде споделен.</string>
-    <string name="system_restricted_background_desc">SimpleX не може да работи във фонов режим. Ще получавате известията само когато приложението работи.</string>
+    <string name="system_restricted_background_desc">RX-msg не може да работи във фонов режим. Ще получавате известията само когато приложението работи.</string>
     <string name="system_restricted_background_in_call_desc">Приложението може да се затвори след 1 минута във фонов режим.</string>
     <string name="system_restricted_background_warn"><![CDATA[За да активирате известията, моля, изберете <b>Използване на батерията на приложението</b> / <b>Неограничено</b> в системните настройки на приложението.]]></string>
     <string name="connect_use_new_incognito_profile">Използвай нов инкогнито профил</string>

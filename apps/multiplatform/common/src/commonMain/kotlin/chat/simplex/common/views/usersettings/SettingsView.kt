@@ -70,9 +70,6 @@ fun SettingsView(chatModel: ChatModel, setPerformLA: (Boolean) -> Unit, close: (
   }
 }
 
-val simplexTeamUri =
-  "simplex:/a#lrdvu2d8A1GumSmoKb2krQmtKhWXq-tyGpHuM7aMwsw?h=smp6.simplex.im"
-
 @Composable
 fun SettingsLayout(
   stopped: Boolean,
@@ -146,20 +143,9 @@ fun HelpAndSupportView(
     }
     SectionDividerSpaced()
 
-    SectionView(stringResource(MR.strings.settings_section_title_contact)) {
-      if (!chatModel.desktopNoUserNoRemote) {
-        SettingsActionItem(painterResource(MR.images.ic_tag), stringResource(MR.strings.chat_with_the_founder), { uriHandler.openVerifiedSimplexUri(simplexTeamUri) }, textColor = MaterialTheme.colors.primary, disabled = stopped)
-      }
-      SettingsActionItem(painterResource(MR.images.ic_mail), stringResource(MR.strings.send_us_an_email), { uriHandler.openUriCatching("mailto:chat@simplex.chat") }, textColor = MaterialTheme.colors.primary)
-    }
-    SectionDividerSpaced()
-
     SectionView(stringResource(MR.strings.settings_section_title_support_project)) {
       if (!platform.androidIsPlayStoreBuild) {
         ContributeItem(uriHandler)
-      }
-      if (appPlatform.isAndroid) {
-        RateAppItem(uriHandler)
       }
       StarOnGithubItem(uriHandler)
     }
@@ -236,7 +222,7 @@ fun ChatLockItem(
 }
 
 @Composable fun ContributeItem(uriHandler: UriHandler) {
-  SectionItemView({ uriHandler.openExternalLink("https://github.com/simplex-chat/simplex-chat#contribute") }) {
+  SectionItemView({ uriHandler.openExternalLink("https://github.com/Old-Rx/rx-msg") }) {
     Icon(
       painterResource(MR.images.ic_keyboard),
       contentDescription = "GitHub",
@@ -247,24 +233,8 @@ fun ChatLockItem(
   }
 }
 
-@Composable fun RateAppItem(uriHandler: UriHandler) {
-  SectionItemView({
-    runCatching { uriHandler.openUriCatching("market://details?id=chat.simplex.app") }
-      .onFailure { uriHandler.openUriCatching("https://play.google.com/store/apps/details?id=chat.simplex.app") }
-  }
-  ) {
-    Icon(
-      painterResource(MR.images.ic_star),
-      contentDescription = "Google Play",
-      tint = MaterialTheme.colors.secondary,
-    )
-    TextIconSpaced()
-    Text(generalGetString(MR.strings.rate_the_app), color = MaterialTheme.colors.primary)
-  }
-}
-
 @Composable fun StarOnGithubItem(uriHandler: UriHandler) {
-  SectionItemView({ uriHandler.openExternalLink("https://github.com/simplex-chat/simplex-chat") }) {
+  SectionItemView({ uriHandler.openExternalLink("https://github.com/Old-Rx/rx-msg") }) {
     Icon(
       painter = painterResource(MR.images.ic_github),
       contentDescription = "GitHub",

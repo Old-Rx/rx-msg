@@ -1,3 +1,15 @@
+# RX-msg
+
+[![RX Android Baseline](https://github.com/Old-Rx/rx-msg/actions/workflows/rx-android-baseline.yml/badge.svg?branch=main)](https://github.com/Old-Rx/rx-msg/actions/workflows/rx-android-baseline.yml)
+
+RX-msg is an Android-focused fork of SimpleX Chat. It keeps the SimpleX protocol and native core while developing an independent application identity under the Android package `com.oldrx.rxmsg`.
+
+The current baseline produces an ARM64 FOSS debug APK in GitHub Actions. See the workflow artifacts for installable builds.
+
+## Upstream SimpleX documentation
+
+The documentation below is retained from the upstream project and may still describe SimpleX-branded apps and services.
+
 [![build](https://github.com/simplex-chat/simplex-chat/actions/workflows/build.yml/badge.svg?branch=stable)](https://github.com/simplex-chat/simplex-chat/actions/workflows/build.yml)
 [![GitHub downloads](https://img.shields.io/github/downloads/simplex-chat/simplex-chat/total)](https://github.com/simplex-chat/simplex-chat/releases)
 [![GitHub release](https://img.shields.io/github/v/release/simplex-chat/simplex-chat)](https://github.com/simplex-chat/simplex-chat/releases)

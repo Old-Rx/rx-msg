@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="190" viewBox="0 0 768 190">
+  <g transform="translate(4 6)">
+    <rect width="178" height="178" rx="40" fill="#10155A"/>
+    <path fill="#FFFFFF" d="M40 39h98c11 0 20 9 20 20v52c0 11-9 20-20 20H97l-24 20v-20H40c-11 0-20-9-20-20V59c0-11 9-20 20-20Z"/>
+    <path fill="#10155A" d="M46 61h28c15 0 24 9 24 22 0 8-4 15-12 19l13 19H82l-11-16h-9v16H46V61Zm16 13v16h11c6 0 9-3 9-8s-3-8-9-8H62Z"/>
+    <path fill="#00CFE8" d="M100 63h16l9 15 9-15h16l-17 26 17 26h-16l-9-15-9 15h-16l17-26-17-26Z"/>
+  </g>
+  <text x="210" y="135" fill="#10155A" font-family="Arial, Helvetica, sans-serif" font-size="126" font-weight="700" letter-spacing="-5">RX-msg</text>
+</svg>

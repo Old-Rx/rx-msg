@@ -98,7 +98,7 @@
     <string name="you_accepted_connection">Você aceitou a conexão</string>
     <string name="about_simplex">Sobre o SimpleX</string>
     <string name="network_settings">Definições de rede avançadas</string>
-    <string name="about_simplex_chat">Sobre o SimpleX Chat</string>
+    <string name="about_simplex_chat">Sobre o RX-msg</string>
     <string name="above_then_preposition_continuation">acima, então:</string>
     <string name="users_delete_all_chats_deleted">Todas as conversas e mensagens serão apagadas - esta ação não pode ser revertida!</string>
     <string name="all_group_members_will_remain_connected">Todos os membros do grupo permanecerão conectados.</string>
@@ -267,7 +267,7 @@
     <string name="error_changing_role">Erro ao alterar função</string>
     <string name="chat_preferences_contact_allows">O contacto permite</string>
     <string name="chat_preferences">Preferências de conversa</string>
-    <string name="app_name">SimpleX</string>
+    <string name="app_name">RX-msg</string>
     <string name="thousand_abbreviation">mil</string>
     <string name="connect_via_contact_link">Conectar através do endereço de contacto?</string>
     <string name="connect_via_invitation_link">Conectar via link de convite?</string>
@@ -457,7 +457,7 @@
     <string name="delete_profile">Eliminar perfil</string>
     <string name="smp_server_test_create_queue">Criar fila</string>
     <string name="for_me_only">Eliminar para mim</string>
-    <string name="auth_disable_simplex_lock">Desativar o bloqueio do SimpleX</string>
+    <string name="auth_disable_simplex_lock">Desativar o bloqueio do RX-msg</string>
     <string name="maximum_supported_file_size">Atualmente o tamanho máximo de ficheiro suportado é %1$s.</string>
     <string name="button_delete_contact">Eliminar contacto</string>
     <string name="create_group">Criar grupo secreto</string>
@@ -523,7 +523,7 @@
     <string name="v4_2_auto_accept_contact_requests_desc">Com mensagem de boas-vindas opcional.</string>
     <string name="simplex_link_connection">via %1$s</string>
     <string name="you_are_already_connected_to_vName_via_this_link">Já está conectado a %1$s.</string>
-    <string name="simplex_service_notification_title">SimpleX Chat service</string>
+    <string name="simplex_service_notification_title">RX-msg service</string>
     <string name="large_file">Ficheiro grande!</string>
     <string name="icon_descr_image_snd_complete">Imagem enviada</string>
     <string name="you_can_connect_to_simplex_chat_founder"><![CDATA[Você pode <font color="#0088ff">conectar-se com os desenvolvedores do SimpleX Chat para fazer quaisquer perguntas e receber atualizações</font>.]]></string>
@@ -534,7 +534,7 @@
     <string name="learn_more">Saiba mais</string>
     <string name="you_can_accept_or_reject_connection">Quando as pessoas solicitam conexão, você pode aceitá-la ou rejeitá-la.</string>
     <string name="you_can_create_it_later">Você pode criá-lo mais tarde</string>
-    <string name="email_invite_subject">Vamos conversar no SimpleX Chat</string>
+    <string name="email_invite_subject">Vamos conversar no RX-msg</string>
     <string name="icon_descr_video_off">Vídeo desligado</string>
     <string name="integrity_msg_skipped">%1$d mensagem(s) ignoradas</string>
     <string name="alert_text_decryption_error_too_many_skipped">%1$d mensagens ignoradas.</string>
@@ -573,7 +573,7 @@
     <string name="this_text_is_available_in_settings">Este texto está disponível nas definições</string>
     <string name="onboarding_notifications_mode_subtitle">Pode ser alterado mais tarde através das definições.</string>
     <string name="settings_section_title_help">Ajuda</string>
-    <string name="settings_section_title_support">Suporte SimpleX Chat</string>
+    <string name="settings_section_title_support">Suporte RX-msg</string>
     <string name="settings_experimental_features">Funcionalidades experimentais</string>
     <string name="settings_section_title_themes">Temas</string>
     <string name="theme_dark">Escuro</string>
@@ -684,7 +684,7 @@
     <string name="image_decoding_exception_title">Erro de descodificação</string>
     <string name="developer_options">IDs das bases de dados e opções de isolamento do Transporte</string>
     <string name="database_downgrade">Regressão da base de dados</string>
-    <string name="auth_enable_simplex_lock">Ativar SimpleX Lock</string>
+    <string name="auth_enable_simplex_lock">Ativar RX-msg Lock</string>
     <string name="edit_verb">Editar</string>
     <string name="icon_descr_edited">editado</string>
     <string name="disappearing_message">Mensagem temporária</string>
@@ -697,8 +697,8 @@
     <string name="share_text_disappears_at">Desaparecerá a: %s</string>
     <string name="delete_files_and_media_question">Eliminar ficheiros e multimédia\?</string>
     <string name="share_text_deleted_at">Eliminado a: %s</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">A autenticação do dispositivo está desativada. A desligar SimpleX Lock.</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">A autenticação do dispositivo não está ativa. Pode ativar o SimpleX Lock através das Definições, depois de ativar a autenticação do dispositivo.</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">A autenticação do dispositivo está desativada. A desligar RX-msg Lock.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">A autenticação do dispositivo não está ativa. Pode ativar o RX-msg Lock através das Definições, depois de ativar a autenticação do dispositivo.</string>
     <string name="mtr_error_different">migração diferente na aplicação/base de dados: %s / %s</string>
     <string name="allow_accepting_calls_from_lock_screen">Ativar chamadas a partir do ecrã de bloqueio através das Definições.</string>
     <string name="encrypt_database_question">Encriptar base de dados\?</string>
@@ -776,7 +776,7 @@
     <string name="receipts_groups_enable_keep_overrides">Ativar (manter sobreposição de grupo)</string>
     <string name="auth_open_migration_to_another_device">Abrir ecrã de migração</string>
     <string name="snd_error_relay">Erro de servidor do destino: %1$s</string>
-    <string name="you_can_turn_on_lock">Você pode ativar o SimpleX Lock através das Definições.</string>
+    <string name="you_can_turn_on_lock">Você pode ativar o RX-msg Lock através das Definições.</string>
     <string name="delete_messages__question">Eliminar %d mensagens?</string>
     <string name="create_chat_profile">Criar perfil de chat</string>
     <string name="permissions_open_settings">Abrir definições</string>
@@ -826,7 +826,7 @@
     <string name="remote_ctrl_error_disconnected">Desktop foi disconectado</string>
     <string name="migrate_to_device_download_failed">Transferência falhada</string>
     <string name="disable_notifications_button">Desativar notificações</string>
-    <string name="open_simplex_chat_to_accept_call">Abir SimpleX Chat para aceitar a chamada</string>
+    <string name="open_simplex_chat_to_accept_call">Abir RX-msg para aceitar a chamada</string>
     <string name="receipts_contacts_enable_keep_overrides">Ativar (manter sobreposições)</string>
     <string name="info_row_created_at">Criado em</string>
     <string name="feature_enabled_for">Ativo para</string>

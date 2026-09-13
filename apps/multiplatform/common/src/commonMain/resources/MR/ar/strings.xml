@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="accept_contact_button">اقبل</string>
-    <string name="about_simplex_chat">عن SimpleX Chat</string>
+    <string name="about_simplex_chat">عن RX-msg</string>
     <string name="a_plus_b">a + b</string>
     <string name="accept">اقبل</string>
     <string name="chat_item_ttl_week">اسبوع 1</string>
@@ -195,7 +195,7 @@
     <string name="icon_descr_server_status_error">خطأ</string>
     <string name="create_group">أنشئ مجموعة سرية</string>
     <string name="error_aborting_address_change">خطأ في إحباط تغيير العنوان</string>
-    <string name="auth_enable_simplex_lock">فعّل قفل SimpleX</string>
+    <string name="auth_enable_simplex_lock">فعّل قفل RX-msg</string>
     <string name="auth_confirm_credential">تأكد من بيانات اعتمادك</string>
     <string name="create_simplex_address">أنشئ عنوان SimpleX</string>
     <string name="continue_to_next_step">متابعة</string>
@@ -416,7 +416,7 @@
     <string name="group_members_can_send_dms">يمكن للأعضاء إرسال رسائل مباشرة.</string>
     <string name="failed_to_parse_chats_title">فشل تحميل الدردشات</string>
     <string name="email_invite_body">أهلاً!
-\nتواصل معي عبر SimpleX Chat: %s</string>
+\nتواصل معي عبر RX-msg: %s</string>
     <string name="icon_descr_hang_up">قطع المكالمة</string>
     <string name="files_and_media_prohibited">الملفات والوسائط ممنوعة!</string>
     <string name="icon_descr_file">الملف</string>
@@ -578,7 +578,7 @@
     <string name="image_descr_link_preview">رابط معاينة الصورة</string>
     <string name="live_message">رسالة حيّة!</string>
     <string name="italic_text">مائل</string>
-    <string name="email_invite_subject">لنتحدث في SimpleX Chat</string>
+    <string name="email_invite_subject">لنتحدث في RX-msg</string>
     <string name="lock_after">قفل بعد</string>
     <string name="lock_mode">وضع القفل</string>
     <string name="alert_title_group_invitation_expired">انتهت صلاحية الدعوة!</string>
@@ -591,16 +591,16 @@
     <string name="delivery_receipts_are_disabled">إيصالات التسليم مُعطَّلة!</string>
     <string name="no_call_on_lock_screen">عطّل</string>
     <string name="timed_messages">رسائل تختفي</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">استيثاق الجهاز مُعطَّل. جارِ إيقاف تشغيل قفل SimpleX.</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">استيثاق الجهاز مُعطَّل. جارِ إيقاف تشغيل قفل RX-msg.</string>
     <string name="ttl_m">%d شهر</string>
     <string name="ttl_weeks">%d أسابيع</string>
     <string name="ttl_w">%d أسبوع</string>
     <string name="v4_4_disappearing_messages">رسائل تختفي</string>
     <string name="failed_to_create_user_duplicate_title">اسم العرض مكرر!</string>
     <string name="smp_server_test_disconnect">قطع الاتصال</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">استيثاق الجهاز غير مفعّل. يمكنك تشغيل قفل SimpleX عبر الإعدادات، بمجرد تفعيل استيثاق الجهاز.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">استيثاق الجهاز غير مفعّل. يمكنك تشغيل قفل RX-msg عبر الإعدادات، بمجرد تفعيل استيثاق الجهاز.</string>
     <string name="smp_server_test_download_file">نزّل الملف</string>
-    <string name="auth_disable_simplex_lock">عطّل قفل SimpleX</string>
+    <string name="auth_disable_simplex_lock">عطّل قفل RX-msg</string>
     <string name="edit_verb">حرّر</string>
     <string name="display_name__field">اسم ملف التعريف:</string>
     <string name="icon_descr_email">البريد الإلكتروني</string>
@@ -807,7 +807,7 @@
     <string name="only_your_contact_can_make_calls">فقط جهة اتصالك يمكنها إجراء المكالمات.</string>
     <string name="auth_open_chat_console">افتح وحدة تحكم الدردشة</string>
     <string name="la_lock_mode_passcode">إدخال رمز المرور</string>
-    <string name="open_simplex_chat_to_accept_call">افتح SimpleX Chat لقبول المكالمة</string>
+    <string name="open_simplex_chat_to_accept_call">افتح RX-msg لقبول المكالمة</string>
     <string name="opensource_protocol_and_code_anybody_can_run_servers">يمكن لأي شخص استضافة الخوادم.</string>
     <string name="password_to_show">كلمة المرور للإظهار</string>
     <string name="call_connection_peer_to_peer">ندّ لِندّ</string>
@@ -1004,13 +1004,13 @@
     <string name="settings_section_title_settings">الإعدادات</string>
     <string name="simplex_link_invitation">دعوة SimpleX لمرة واحدة</string>
     <string name="notification_preview_mode_message_desc">أظهر جهة الاتصال والرسالة</string>
-    <string name="la_notice_title_simplex_lock">قفل SimpleX</string>
+    <string name="la_notice_title_simplex_lock">قفل RX-msg</string>
     <string name="is_not_verified">لم يتحقق من %s</string>
-    <string name="chat_lock">قفل SimpleX</string>
+    <string name="chat_lock">قفل RX-msg</string>
     <string name="smp_servers">خوادم SMP</string>
     <string name="share_image">مشاركة الوسائط…</string>
-    <string name="ntf_channel_messages">رسائل SimpleX Chat</string>
-    <string name="lock_not_enabled">قفل SimpleX غير مفعّل!</string>
+    <string name="ntf_channel_messages">رسائل RX-msg</string>
+    <string name="lock_not_enabled">قفل RX-msg غير مفعّل!</string>
     <string name="auth_stop_chat">إيقاف الدردشة</string>
     <string name="stop_rcv_file__title">التوقف عن استلام الملف؟</string>
     <string name="share_file">مشاركة الملف…</string>
@@ -1029,7 +1029,7 @@
     <string name="stop_chat_confirmation">إيقاف</string>
     <string name="settings_notification_preview_mode_title">أظهر المعاينة</string>
     <string name="icon_descr_speaker_off">السماعة متوقفة</string>
-    <string name="la_lock_mode">SimpleX وضع القفل</string>
+    <string name="la_lock_mode">RX-msg وضع القفل</string>
     <string name="share_link">مشاركة الرابط</string>
     <string name="alert_title_skipped_messages">الرسائل التي تم تخطيها</string>
     <string name="simplex_address">عنوان SimpleX</string>
@@ -1045,15 +1045,15 @@
     <string name="stop_chat_to_export_import_or_delete_chat_database">أوقف الدردشة لتصدير أو استيراد أو حذف قاعدة بيانات الدردشة. لن تتمكّن من استلام الرسائل وإرسالها أثناء إيقاف الدردشة.</string>
     <string name="chat_item_ttl_seconds">%s ثانية/ثواني</string>
     <string name="callstate_starting">يبدأ…</string>
-    <string name="auth_simplex_lock_turned_on">شُغّل قفل SimpleX</string>
+    <string name="auth_simplex_lock_turned_on">شُغّل قفل RX-msg</string>
     <string name="show_dev_options">أظهر:</string>
     <string name="show_developer_options">أظهر خيارات المطوِّر</string>
     <string name="core_simplexmq_version">simplexmq: v%s (%2s)</string>
     <string name="error_smp_test_server_auth">يتطلب الخادم إذنًا لإنشاء قوائم انتظار، تحقق من كلمة المرور.</string>
     <string name="error_xftp_test_server_auth">يتطلب الخادم إذنًا للرفع، تحقق من كلمة المرور.</string>
     <string name="notification_preview_mode_contact_desc">أظهر جهة الاتصال فقط</string>
-    <string name="ntf_channel_calls">مكالمات SimpleX Chat</string>
-    <string name="simplex_service_notification_title">خدمة SimpleX Chat</string>
+    <string name="ntf_channel_calls">مكالمات RX-msg</string>
+    <string name="simplex_service_notification_title">خدمة RX-msg</string>
     <string name="notifications_mode_periodic">يبدأ بشكل دوري</string>
     <string name="stop_file__confirm">إيقاف</string>
     <string name="stop_file__action">إيقاف الملف</string>
@@ -1079,19 +1079,19 @@
     <string name="contact_you_shared_link_with_wont_be_able_to_connect">لن تتمكن جهة الاتصال التي شاركت هذا الرابط معها من الاتصال!</string>
     <string name="this_text_is_available_in_settings">هذا النص متاح في الإعدادات</string>
     <string name="to_protect_privacy_simplex_has_ids_for_queues">لحماية خصوصيتك، يستخدم SimpleX معرّفات منفصلة لكل جهة اتصال لديك.</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">لحماية معلوماتك، فعّل قفل SimpleX \nسيُطلب منك إكمال المصادقة قبل تفعيل هذه الميزة.</string>
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">لحماية معلوماتك، فعّل قفل RX-msg \nسيُطلب منك إكمال المصادقة قبل تفعيل هذه الميزة.</string>
     <string name="network_session_mode_transport_isolation">عزل النقل</string>
     <string name="v4_4_french_interface_descr">بفضل المستخدمين - ساهِم عبر Weblate!</string>
     <string name="v4_6_audio_video_calls_descr">دعم البلوتوث وتحسينات أخرى.</string>
     <string name="v5_0_polish_interface_descr">بفضل المستخدمين - ساهِم عبر Weblate!</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[لتحسين الخصوصية، <b>يتم تشغيل SimpleX في الخلفية</b> بدلاً من استخدام إشعارات push.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[لتحسين الخصوصية، <b>يتم تشغيل RX-msg في الخلفية</b> بدلاً من استخدام إشعارات push.]]></string>
     <string name="tap_to_start_new_chat">انقر لبدء محادثة جديدة</string>
     <string name="to_share_with_your_contact">(للمشاركة مع جهة اتصالك)</string>
     <string name="to_connect_via_link_title">للتواصل عبر الرابط</string>
     <string name="scan_qr_to_connect_to_contact">للاتصال، يمكن لجهة الاتصال مسح رمز QR أو استخدام الرابط في التطبيق.</string>
     <string name="smp_servers_test_servers">اختبر الخوادم</string>
     <string name="first_platform_without_user_ids">لا معرّفات مُستخدم</string>
-    <string name="settings_section_title_support">دعم SimpleX Chat</string>
+    <string name="settings_section_title_support">دعم RX-msg</string>
     <string name="switch_verb">بدِّل</string>
     <string name="color_title">العنوان الرئيسي</string>
     <string name="moderate_message_will_be_marked_warning">سيتم وضع علامة على الرسالة على أنها تحت الإشراف لجميع الأعضاء.</string>
@@ -1121,7 +1121,7 @@
     <string name="images_limit_title">الصور كثيرة!</string>
     <string name="videos_limit_title">مقاطع الفيديو كثيرة!</string>
     <string name="chat_help_tap_button">زر النقر</string>
-    <string name="thank_you_for_installing_simplex">شكرًا لك على تثبيت SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">شكرًا لك على تثبيت RX-msg!</string>
     <string name="smp_servers_test_server">اختبر الخادم</string>
     <string name="alert_text_msg_bad_hash">تجزئة الرسالة السابقة مختلفة.</string>
     <string name="alert_text_msg_bad_id">معرف الرسالة التالية غير صحيح (أقل أو يساوي السابق).
@@ -1173,7 +1173,7 @@
     <string name="you_sent_group_invitation">لقد أرسلت دعوة جماعية</string>
     <string name="your_preferences">تفضيلاتك</string>
     <string name="v4_4_verify_connection_security">تحقق من أمان الاتصال</string>
-    <string name="you_can_turn_on_lock">يمكنك تفعيل قفل SimpleX عبر الإعدادات.</string>
+    <string name="you_can_turn_on_lock">يمكنك تفعيل قفل RX-msg عبر الإعدادات.</string>
     <string name="you_have_no_chats">ليس لديك أي محادثات</string>
     <string name="icon_descr_video_snd_complete">أرسلت الفيديو</string>
     <string name="voice_messages_prohibited">الرسائل الصوتية ممنوعة!</string>
@@ -1320,7 +1320,7 @@
     <string name="connect_use_current_profile">استخدم ملف التعريف الحالي</string>
     <string name="disable_notifications_button">عطّل الإشعارات</string>
     <string name="turn_off_system_restriction_button">افتح إعدادات التطبيق</string>
-    <string name="system_restricted_background_desc">لا يمكن تشغيل SimpleX في الخلفية. ستستلم الإشعارات فقط عندما يكون التطبيق قيد التشغيل.</string>
+    <string name="system_restricted_background_desc">لا يمكن تشغيل RX-msg في الخلفية. ستستلم الإشعارات فقط عندما يكون التطبيق قيد التشغيل.</string>
     <string name="connect__a_new_random_profile_will_be_shared">سيتم مشاركة ملف تعريف عشوائي جديد.</string>
     <string name="paste_the_link_you_received_to_connect_with_your_contact">ألصِق الرابط المُستلَم للتواصل مع جهة اتصالك…</string>
     <string name="connect__your_profile_will_be_shared">ستتم مشاركة ملفك التعريفي %1$s.</string>
@@ -2796,10 +2796,10 @@
     <string name="close_behavior_dialog_minimize">صغّر إلى اللوحة</string>
     <string name="close_behavior_dialog_title">تصغير إلى اللوحة؟</string>
     <string name="appearance_minimize_to_tray">أغلِق إلى اللوحة</string>
-    <string name="tray_quit">أنهِ SimpleX</string>
-    <string name="tray_show">أظهر SimpleX</string>
-    <string name="tray_tooltip">SimpleX</string>
-    <string name="tray_tooltip_unread">SimpleX — %d غير مقروءة</string>
+    <string name="tray_quit">أنهِ RX-msg</string>
+    <string name="tray_show">أظهر RX-msg</string>
+    <string name="tray_tooltip">RX-msg</string>
+    <string name="tray_tooltip_unread">RX-msg — %d غير مقروءة</string>
     <string name="another_instance_not_responding">قد تكون هناك نُسخة أخرى من التطبيق قيد التشغيل أو لم تُغلق بشكل صحيح. أتريد البدء على أي حال؟</string>
     <string name="another_instance_title">التطبيق يعمل بالفعل</string>
     <string name="relay_status_rejected">رُفض</string>

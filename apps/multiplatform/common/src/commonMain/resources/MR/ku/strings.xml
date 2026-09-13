@@ -157,7 +157,7 @@
     <string name="is_not_verified">%s ne tesdîqkirî ye</string>
     <string name="your_settings">Eyarên te</string>
     <string name="your_simplex_contact_address">Adresa te yî SimpleXê</string>
-    <string name="about_simplex_chat">Li ser SimpleX Chat</string>
+    <string name="about_simplex_chat">Li ser RX-msg</string>
     <string name="how_to_use_simplex_chat">Çawa tê şuxulandin</string>
     <string name="markdown_help">Arîkariya Markdownê</string>
     <string name="chat_with_the_founder">Pirsan û fikran bişîne</string>
@@ -188,7 +188,7 @@
     <string name="save_auto_accept_settings">Eyarên adresa SimpleXê qeyd bike</string>
     <string name="delete_address">Adresê jê bibe</string>
     <string name="invite_friends">Hevalan dewet bike</string>
-    <string name="email_invite_subject">Em li SimpleX Chat qise bikin</string>
+    <string name="email_invite_subject">Em li RX-msg qise bikin</string>
     <string name="for_social_media">Ji bo medyaya sosyal</string>
     <string name="or_to_share_privately">Yan ji bo parvekirina şexsî</string>
     <string name="simplex_address_or_1_time_link">Adresa SimpleXê yan jî lînka 1-carê?</string>
@@ -307,7 +307,7 @@
     <string name="theme_simplex">SimpleX</string>
     <string name="simplex_address">Adresa SimpleXê</string>
     <string name="simplex_link_channel">Lînka qenala SimpleXê</string>
-    <string name="simplex_service_notification_title">Xizmeta SimpleX Chatê</string>
+    <string name="simplex_service_notification_title">Xizmeta RX-msgê</string>
     <string name="simplex_link_group">Lînka komê ya SimpleXê</string>
     <string name="simplex_link_mode">Lînkên SimpleXê</string>
     <string name="simplex_links">Lînkên SimpleXê</string>
@@ -337,7 +337,7 @@
     <string name="strikethrough_text">xet/xêz/xîşk</string>
     <string name="privacy_media_blur_radius_strong">Biqewet</string>
     <string name="subscribed">Abonekirî</string>
-    <string name="settings_section_title_support">Pişt bide SimpleX Chatê</string>
+    <string name="settings_section_title_support">Pişt bide RX-msgê</string>
     <string name="switch_verb">Biguhere</string>
     <string name="la_mode_system">Sîstem</string>
     <string name="color_mode_system">Sîstem</string>

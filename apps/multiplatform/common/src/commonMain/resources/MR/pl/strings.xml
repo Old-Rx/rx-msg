@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="auth_device_authentication_is_disabled_turning_off">Uwierzytelnianie urządzenia jest wyłączone. Wyłączanie blokady SimpleX.</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Uwierzytelnianie urządzenia nie jest włączone. Możesz włączyć blokadę SimpleX w Ustawieniach po włączeniu uwierzytelniania urządzenia.</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">Uwierzytelnianie urządzenia jest wyłączone. Wyłączanie blokady RX-msg.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Uwierzytelnianie urządzenia nie jest włączone. Możesz włączyć blokadę RX-msg w Ustawieniach po włączeniu uwierzytelniania urządzenia.</string>
     <string name="direct_messages">Bezpośrednie wiadomości</string>
     <string name="connect_via_link_verb">Połącz</string>
     <string name="server_connected">połączony</string>
@@ -28,7 +28,7 @@
     <string name="trying_to_connect_to_server_to_receive_messages">Próba połączenia z serwerem, który służył do odbierania wiadomości z tego połączenia.</string>
     <string name="error_connecting_to_server_to_receive_messages">Próbowanie połączenia z serwerem używanym do odbierania wiadomości od tego kontaktu (błąd: %1$s).</string>
     <string name="unknown_message_format">nieznany format wiadomości</string>
-    <string name="app_name">SimpleX</string>
+    <string name="app_name">RX-msg</string>
     <string name="sender_you_pronoun">Ty</string>
     <string name="connected_to_server_to_receive_messages_from_contact">Jesteś połączony z serwerem, który służył do odbierania wiadomości z tego połączenia.</string>
     <string name="profile_will_be_sent_to_contact_sending_link">Twój profil zostanie wysłany do kontaktu, od którego otrzymałeś ten link.</string>
@@ -97,8 +97,8 @@
     <string name="settings_notifications_mode_title">Usługa powiadomień</string>
     <string name="notifications_mode_off">Działa, gdy aplikacja jest otwarta</string>
     <string name="settings_notification_preview_mode_title">Pokaż podgląd</string>
-    <string name="ntf_channel_calls">Połączenia SimpleX Chat</string>
-    <string name="ntf_channel_messages">Wiadomości SimpleX Chat</string>
+    <string name="ntf_channel_calls">Połączenia RX-msg</string>
+    <string name="ntf_channel_messages">Wiadomości RX-msg</string>
     <string name="notifications_mode_periodic">Uruchamia się okresowo</string>
     <string name="notification_contact_connected">Połączony</string>
     <string name="notification_preview_somebody">Kontakt ukryty:</string>
@@ -108,14 +108,14 @@
     <string name="notification_preview_new_message">nowa wiadomość</string>
     <string name="notification_preview_mode_message_desc">Pokaż kontakt i wiadomość</string>
     <string name="notification_preview_mode_contact_desc">Pokaż tylko kontakt</string>
-    <string name="la_notice_title_simplex_lock">Blokada SimpleX</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Aby chronić swoje informacje, włącz funkcję blokady SimpleX.
+    <string name="la_notice_title_simplex_lock">Blokada RX-msg</string>
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Aby chronić swoje informacje, włącz funkcję blokady RX-msg.
 \nPrzed włączeniem tej funkcji zostanie wyświetlony monit uwierzytelniania.</string>
     <string name="la_notice_turn_on">Włącz</string>
-    <string name="auth_disable_simplex_lock">Wyłącz blokadę SimpleX</string>
-    <string name="auth_enable_simplex_lock">Włącz blokadę SimpleX</string>
+    <string name="auth_disable_simplex_lock">Wyłącz blokadę RX-msg</string>
+    <string name="auth_enable_simplex_lock">Włącz blokadę RX-msg</string>
     <string name="auth_log_in_using_credential">Zaloguj się przy użyciu swoich poświadczeń</string>
-    <string name="auth_simplex_lock_turned_on">Blokada SimpleX włączona</string>
+    <string name="auth_simplex_lock_turned_on">Blokada RX-msg włączona</string>
     <string name="auth_unlock">Odblokuj</string>
     <string name="auth_you_will_be_required_to_authenticate_when_you_start_or_resume">Uwierzytelnienie będzie wymagane przy uruchamianiu lub wznawianiu aplikacji po 30 sekundach w tle.</string>
     <string name="message_delivery_error_title">Błąd dostarczenia wiadomości</string>
@@ -313,7 +313,7 @@
     <string name="chat_with_the_founder">Wyślij pytania i pomysły</string>
     <string name="send_us_an_email">Wyślij do nas email</string>
     <string name="smp_servers_test_failed">Test serwera nie powiódł się!</string>
-    <string name="chat_lock">Blokada SimpleX</string>
+    <string name="chat_lock">Blokada RX-msg</string>
     <string name="is_not_verified">%s nie jest zweryfikowany</string>
     <string name="smp_servers">Serwery SMP</string>
     <string name="star_on_github">Daj gwiazdkę na GitHub</string>
@@ -476,7 +476,7 @@
     <string name="icon_descr_call_missed">Nieodebrane połączenie</string>
     <string name="status_no_e2e_encryption">brak szyfrowania e2e</string>
     <string name="open_verb">Otwórz</string>
-    <string name="open_simplex_chat_to_accept_call">Otwórz SimpleX Chat, aby przyjąć połączenie.</string>
+    <string name="open_simplex_chat_to_accept_call">Otwórz RX-msg, aby przyjąć połączenie.</string>
     <string name="call_connection_peer_to_peer">peer-to-peer</string>
     <string name="icon_descr_call_pending_sent">Oczekujące połączenie</string>
     <string name="icon_descr_call_rejected">Odrzucone połączenie</string>
@@ -522,7 +522,7 @@
     <string name="settings_section_title_settings">Ustawienia</string>
     <string name="settings_section_title_socks">Proxy SOCKS</string>
     <string name="stop_chat_question">Zatrzymać czat\?</string>
-    <string name="settings_section_title_support">Wspieraj SimpleX Chat</string>
+    <string name="settings_section_title_support">Wspieraj RX-msg</string>
     <string name="settings_section_title_themes">Motywy</string>
     <string name="settings_section_title_you">Ty</string>
     <string name="your_chat_database">Twoja baza danych czatu</string>
@@ -879,7 +879,7 @@
     <string name="v4_5_italian_interface_descr">Podziękowania dla użytkowników - wkład za pośrednictwem Weblate!</string>
     <string name="v4_6_chinese_spanish_interface_descr">Podziękowania dla użytkowników - wkład za pośrednictwem Weblate!</string>
     <string name="allow_your_contacts_irreversibly_delete">Zezwól swoim kontaktom na nieodwracalne usuwanie wysłanych wiadomości. (24 godziny)</string>
-    <string name="about_simplex_chat">O SimpleX Chat</string>
+    <string name="about_simplex_chat">O RX-msg</string>
     <string name="above_then_preposition_continuation">powyżej, wtedy:</string>
     <string name="accept_connection_request__question">Zaakceptować prośbę o połączenie\?</string>
     <string name="color_primary">Akcent</string>
@@ -978,13 +978,13 @@
     <string name="simplex_link_contact">Adres kontaktowy SimpleX</string>
     <string name="stop_chat_to_export_import_or_delete_chat_database">Zatrzymaj czat, aby wyeksportować, zaimportować lub usunąć bazę danych czatu. Podczas zatrzymania chatu nie będzie można odbierać ani wysyłać wiadomości.</string>
     <string name="smp_servers_test_some_failed">Niektóre serwery nie przeszły testu:</string>
-    <string name="thank_you_for_installing_simplex">Dziękujemy za zainstalowanie SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">Dziękujemy za zainstalowanie RX-msg!</string>
     <string name="moderate_message_will_be_marked_warning">Wiadomość zostanie oznaczona jako zmoderowana dla wszystkich członków.</string>
     <string name="member_role_will_be_changed_with_notification">Rola zostanie zmieniona na "%s". Wszyscy w grupie zostaną powiadomieni.</string>
     <string name="delete_files_and_media_desc">Tego działania nie można cofnąć - wszystkie odebrane i wysłane pliki oraz media zostaną usunięte. Obrazy o niskiej rozdzielczości pozostaną.</string>
     <string name="switch_receiving_address_desc">Adres odbiorczy zostanie zmieniony na inny serwer. Zmiana adresu zostanie zakończona gdy nadawca będzie online.</string>
     <string name="this_link_is_not_a_valid_connection_link">Ten link nie jest prawidłowym linkiem połączenia!</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Aby poprawić prywatność, <b>SimpleX działa w tle</b> zamiast korzystać z powiadomień push.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Aby poprawić prywatność, <b>RX-msg działa w tle</b> zamiast korzystać z powiadomień push.]]></string>
     <string name="to_protect_privacy_simplex_has_ids_for_queues">Aby chronić Twoją prywatność, SimpleX używa oddzielnych identyfikatorów dla każdego z Twoich kontaktów.</string>
     <string name="to_verify_compare">Aby zweryfikować szyfrowanie end-to-end z Twoim kontaktem porównaj (lub zeskanuj) kod na waszych urządzeniach.</string>
     <string name="smp_servers_use_server_for_new_conn">Użyj dla nowych połączeń</string>
@@ -994,7 +994,7 @@
     <string name="network_use_onion_hosts_prefer">Gdy dostępny</string>
     <string name="v4_2_auto_accept_contact_requests_desc">Z opcjonalną wiadomością powitalną.</string>
     <string name="group_info_section_title_num_members">%1$s CZŁONKÓW</string>
-    <string name="simplex_service_notification_title">serwis SimpleX Chat</string>
+    <string name="simplex_service_notification_title">serwis RX-msg</string>
     <string name="contact_wants_to_connect_via_call">%1$s chce się z Tobą połączyć przez</string>
     <string name="you_are_already_connected_to_vName_via_this_link">Jesteś już połączony z %1$s.</string>
     <string name="you_can_connect_to_simplex_chat_founder"><![CDATA[Możesz <font color="#0088ff">połączyć się z deweloperami SimpleX Chat aby zadać wszelkie pytania i otrzymywać aktualizacje</font>.]]></string>
@@ -1031,7 +1031,7 @@
     <string name="ensure_xftp_server_address_are_correct_format_and_unique">Upewnij się, że adresy serwerów XFTP są w poprawnym formacie, rozdzielone liniami i nie są zduplikowane.</string>
     <string name="la_auth_failed">Uwierzytelnianie nie powiodło się</string>
     <string name="la_lock_mode_passcode">Wpis pinu</string>
-    <string name="la_lock_mode">Tryb blokady SimpleX</string>
+    <string name="la_lock_mode">Tryb blokady RX-msg</string>
     <string name="la_lock_mode_system">Uwierzytelnianie systemu</string>
     <string name="la_could_not_be_verified">Nie można zweryfikować użytkownika; proszę spróbować ponownie.</string>
     <string name="la_change_app_passcode">Zmień pin</string>
@@ -1040,8 +1040,8 @@
     <string name="la_seconds">%d sekund</string>
     <string name="la_enter_app_passcode">Wprowadź Pin</string>
     <string name="la_no_app_password">Brak pinu aplikacji</string>
-    <string name="lock_not_enabled">Blokada SimpleX wyłączona!</string>
-    <string name="you_can_turn_on_lock">Możesz włączyć blokadę SimpleX poprzez Ustawienia.</string>
+    <string name="lock_not_enabled">Blokada RX-msg wyłączona!</string>
+    <string name="you_can_turn_on_lock">Możesz włączyć blokadę RX-msg poprzez Ustawienia.</string>
     <string name="enable_lock">Włącz blokadę</string>
     <string name="authentication_cancelled">Uwierzytelnianie anulowane</string>
     <string name="confirm_passcode">Potwierdź pin</string>
@@ -1121,9 +1121,9 @@
     <string name="continue_to_next_step">Kontynuuj</string>
     <string name="dont_create_address">Nie twórz adresu</string>
     <string name="email_invite_body">Cześć!
-\nPołącz się ze mną za pomocą SimpleX Chat: %s</string>
+\nPołącz się ze mną za pomocą RX-msg: %s</string>
     <string name="invite_friends">Zaproś znajomych</string>
-    <string name="email_invite_subject">Porozmawiajmy w SimpleX Chat</string>
+    <string name="email_invite_subject">Porozmawiajmy w RX-msg</string>
     <string name="group_welcome_preview">Podgląd</string>
     <string name="opening_database">Otwieranie bazy danych…</string>
     <string name="error_setting_address">Błąd ustawiania adresu</string>
@@ -1334,7 +1334,7 @@
     <string name="disable_notifications_button">Wyłącz powiadomienia</string>
     <string name="turn_off_system_restriction_button">Otwórz ustawienia aplikacji</string>
     <string name="system_restricted_background_in_call_title">Brak rozmów w tle</string>
-    <string name="system_restricted_background_desc">SimpleX nie może działać w tle. Otrzymasz powiadomienia gdy aplikacja jest uruchomiona.</string>
+    <string name="system_restricted_background_desc">RX-msg nie może działać w tle. Otrzymasz powiadomienia gdy aplikacja jest uruchomiona.</string>
     <string name="connect__a_new_random_profile_will_be_shared">Nowy losowy profil zostanie udostępniony.</string>
     <string name="paste_the_link_you_received_to_connect_with_your_contact">Wklej otrzymany link w pole poniżej, aby połączyć się z kontaktem…</string>
     <string name="connect__your_profile_will_be_shared">Twój profil %1$s zostanie udostępniony.</string>

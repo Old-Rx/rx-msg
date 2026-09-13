@@ -1020,17 +1020,9 @@ private val crowdfundingLayout = if (appPlatform.isDesktop)
 else
   CrowdfundingLayout(Dp.Unspecified, RoundedCornerShape(CROWDFUNDING_IMAGE_CORNER_RADIUS), null)
 
-// Google Play policy restricts promoting investments, so Play builds only show it in the US
+// RX-msg does not promote upstream fundraising inside the fork.
 @Composable
-fun crowdfundingAvailable(): Boolean {
-  if (!platform.androidIsPlayStoreBuild) return true
-  if (androidPlayStoreCountry.value == null) {
-    LaunchedEffect(Unit) {
-      if (androidPlayStoreCountry.value == null) platform.androidLoadPlayStoreCountry()
-    }
-  }
-  return isInUs()
-}
+fun crowdfundingAvailable(): Boolean = false
 
 fun isInUs(): Boolean =
   androidPlayStoreCountry.value == "US"

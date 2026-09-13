@@ -16,7 +16,7 @@
     <string name="chat_item_ttl_month">1 місяць</string>
     <string name="learn_more_about_address">Про SimpleX-адресу</string>
     <string name="one_time_link_short">1-разове посилання</string>
-    <string name="about_simplex_chat">Про SimpleX Chat</string>
+    <string name="about_simplex_chat">Про RX-msg</string>
     <string name="v4_3_improved_server_configuration_desc">Додавайте сервери, скануючи QR-коди.</string>
     <string name="users_delete_all_chats_deleted">Усі чати та повідомлення будуть видалені - цю дію неможливо скасувати!</string>
     <string name="allow_calls_only_if">Дозволити дзвінки тільки за умови, що ваш контакт дозволяє їх.</string>
@@ -111,7 +111,7 @@
     <string name="available_in_v51">"
 \nДоступно в версії 5.1"</string>
     <string name="calls_prohibited_with_this_contact">Аудіо/відео дзвінки заборонені.</string>
-    <string name="app_name">SimpleX</string>
+    <string name="app_name">RX-msg</string>
     <string name="both_you_and_your_contact_can_make_calls">Як ви, так і ваш контакт можуть здійснювати дзвінки.</string>
     <string name="thousand_abbreviation">тис.</string>
     <string name="connect_via_contact_link">Підключитися через адресу контакту?</string>
@@ -183,13 +183,13 @@
     <string name="service_notifications_disabled">Миттєві сповіщення вимкнено!</string>
     <string name="simplex_service_notification_text">Отримання повідомлень…</string>
     <string name="hide_notification">Сховати</string>
-    <string name="ntf_channel_messages">Повідомлення чату SimpleX</string>
+    <string name="ntf_channel_messages">Повідомлення чату RX-msg</string>
     <string name="notification_preview_mode_contact_desc">Показати лише контакт</string>
     <string name="notification_new_contact_request">Новий запит на контакт</string>
     <string name="notification_contact_connected">Підключено</string>
-    <string name="auth_simplex_lock_turned_on">Блокування SimpleX увімкнено</string>
+    <string name="auth_simplex_lock_turned_on">Блокування RX-msg увімкнено</string>
     <string name="auth_unlock">Розблокувати</string>
-    <string name="auth_disable_simplex_lock">Вимкнути блокування SimpleX</string>
+    <string name="auth_disable_simplex_lock">Вимкнути блокування RX-msg</string>
     <string name="reply_verb">Відповісти</string>
     <string name="save_verb">Зберегти</string>
     <string name="delete_verb">Видалити</string>
@@ -235,7 +235,7 @@
     <string name="your_settings">Налаштування</string>
     <string name="your_simplex_contact_address">Ваша SimpleX-адреса</string>
     <string name="markdown_help">Допомога з Markdown</string>
-    <string name="chat_lock">Блокування SimpleX</string>
+    <string name="chat_lock">Блокування RX-msg</string>
     <string name="chat_console">Консоль чату</string>
     <string name="smp_servers">Сервери SMP</string>
     <string name="smp_servers_scan_qr">Сканувати QR-код сервера</string>
@@ -318,8 +318,8 @@
     <string name="periodic_notifications_disabled">Періодичні сповіщення вимкнено!</string>
     <string name="enter_passphrase_notification_title">Потрібен пароль</string>
     <string name="la_notice_turn_on">Увімкнути</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Аутентифікація пристрою не увімкнена. Ви можете увімкнути блокування SimpleX через налаштування, якщо увімкнете аутентифікацію пристрою.</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">Аутентифікація пристрою вимкнена. Вимикається блокування SimpleX.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Аутентифікація пристрою не увімкнена. Ви можете увімкнути блокування RX-msg через налаштування, якщо увімкнете аутентифікацію пристрою.</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">Аутентифікація пристрою вимкнена. Вимикається блокування RX-msg.</string>
     <string name="auth_stop_chat">Зупинити чат</string>
     <string name="auth_open_chat_console">Відкрити консоль чату</string>
     <string name="moderate_message_will_be_marked_warning">Повідомлення буде позначено як модероване для всіх учасників.</string>
@@ -408,7 +408,7 @@
     <string name="privacy_redefined">Приватність перевизначена</string>
     <string name="people_can_connect_only_via_links_you_share">Ви вирішуєте, хто може під\'єднатися.</string>
     <string name="encrypted_audio_call">зашифрований e2e аудіовиклик</string>
-    <string name="open_simplex_chat_to_accept_call">Відкрийте SimpleX Chat для прийняття виклику</string>
+    <string name="open_simplex_chat_to_accept_call">Відкрийте RX-msg для прийняття виклику</string>
     <string name="status_e2e_encrypted">e2e зашифровано</string>
     <string name="icon_descr_speaker_off">Динамік вимкнено</string>
     <string name="icon_descr_call_pending_sent">Очікування виклику</string>
@@ -418,7 +418,7 @@
     <string name="your_privacy">Конфіденційність</string>
     <string name="settings_section_title_settings">Налаштування</string>
     <string name="settings_section_title_help">Допомога</string>
-    <string name="settings_section_title_support">Підтримайте SimpleX Chat</string>
+    <string name="settings_section_title_support">Підтримайте RX-msg</string>
     <string name="stop_chat_to_export_import_or_delete_chat_database">Зупиніть чат, щоб експортувати, імпортувати або видалити базу даних чату. Ви не зможете отримувати та надсилати повідомлення, поки чат зупинено.</string>
     <string name="error_deleting_database">Помилка видалення бази даних чату</string>
     <string name="notifications_will_be_hidden">Сповіщення будуть доставлятися лише до зупинки додатка!</string>
@@ -542,19 +542,19 @@
     <string name="smp_server_test_create_file">Створити файл</string>
     <string name="error_deleting_user">Помилка видалення користувача</string>
     <string name="error_updating_user_privacy">Помилка оновлення конфіденційності користувача</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Для покращення конфіденційності, <b>SimpleX працює у фоновому режимі</b> замість використання пуш-повідомлень.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Для покращення конфіденційності, <b>RX-msg працює у фоновому режимі</b> замість використання пуш-повідомлень.]]></string>
     <string name="periodic_notifications">Періодичні сповіщення</string>
-    <string name="simplex_service_notification_title">Служба чату SimpleX</string>
+    <string name="simplex_service_notification_title">Служба чату RX-msg</string>
     <string name="notifications_mode_periodic_desc">Перевіряє нові повідомлення кожні 10 хвилин протягом 1 хвилини</string>
     <string name="notification_preview_mode_hidden">Приховано</string>
     <string name="notification_preview_mode_message_desc">Показати контакт і повідомлення</string>
     <string name="notification_display_mode_hidden_desc">Сховати контакт і повідомлення</string>
-    <string name="la_notice_title_simplex_lock">Блокування SimpleX</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Щоб захистити вашу інформацію, увімкніть блокування SimpleX.
+    <string name="la_notice_title_simplex_lock">Блокування RX-msg</string>
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Щоб захистити вашу інформацію, увімкніть блокування RX-msg.
 \nВам буде запропоновано завершити аутентифікацію перед увімкненням цієї функції.</string>
     <string name="auth_log_in_using_credential">Пройдіть аутентифікацію</string>
-    <string name="auth_enable_simplex_lock">Увімкнути блокування SimpleX</string>
-    <string name="lock_not_enabled">Блокування SimpleX не увімкнено!</string>
+    <string name="auth_enable_simplex_lock">Увімкнути блокування RX-msg</string>
+    <string name="lock_not_enabled">Блокування RX-msg не увімкнено!</string>
     <string name="share_verb">Поділитися</string>
     <string name="copy_verb">Копіювати</string>
     <string name="moderate_message_will_be_deleted_warning">Повідомлення буде видалено для всіх учасників.</string>
@@ -592,7 +592,7 @@
     <string name="only_stored_on_members_devices">(зберігається лише на пристроях учасників групи)</string>
     <string name="toast_permission_denied">Доступ відхилено!</string>
     <string name="use_camera_button">Камера</string>
-    <string name="thank_you_for_installing_simplex">Дякуємо за установку SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">Дякуємо за установку RX-msg!</string>
     <string name="if_you_received_simplex_invitation_link_you_can_open_in_browser">Якщо ви отримали запрошення від SimpleX Chat, ви можете відкрити його у вашому браузері:</string>
     <string name="clear_chat_menu_action">Очистити</string>
     <string name="delete_contact_menu_action">Видалити</string>
@@ -887,7 +887,7 @@
     <string name="v4_6_hidden_chat_profiles">Приховані профілі чату</string>
     <string name="v4_6_group_welcome_message">Повідомлення вітання групи</string>
     <string name="v4_6_chinese_spanish_interface_descr">Дякуємо користувачам – приєднуйтеся через Weblate!</string>
-    <string name="la_lock_mode">Режим блокування SimpleX</string>
+    <string name="la_lock_mode">Режим блокування RX-msg</string>
     <string name="la_lock_mode_system">Системна аутентифікація</string>
     <string name="to_protect_privacy_simplex_has_ids_for_queues">Для захисту вашої конфіденційності SimpleX використовує окремі ID для кожного вашого контакту.</string>
     <string name="onboarding_notifications_mode_off">Коли додаток запущено</string>
@@ -1031,9 +1031,9 @@
     <string name="save_settings_question">Зберегти налаштування\?</string>
     <string name="save_auto_accept_settings">Зберегти налаштування адреси SimpleX</string>
     <string name="email_invite_body">Привіт!
-\nПриєднуйтесь до мене через SimpleX Chat: %s</string>
+\nПриєднуйтесь до мене через RX-msg: %s</string>
     <string name="invite_friends">Запросити друзів</string>
-    <string name="email_invite_subject">Давайте говорити в SimpleX Chat</string>
+    <string name="email_invite_subject">Давайте говорити в RX-msg</string>
     <string name="continue_to_next_step">Продовжити</string>
     <string name="dont_create_address">Не створювати адресу</string>
     <string name="callstate_received_answer">отримано відповідь…</string>
@@ -1140,7 +1140,7 @@
     <string name="database_initialization_error_title">Не вдається ініціалізувати базу даних</string>
     <string name="database_initialization_error_desc">База даних працює некоректно. Натисніть, щоб дізнатися більше</string>
     <string name="periodic_notifications_desc">Програма періодично отримує нові повідомлення — це використовує кілька відсотків батареї щодня. Програма не використовує торкання сповіщень — дані з вашого пристрою не відправляються на сервери.</string>
-    <string name="ntf_channel_calls">Дзвінки чату SimpleX</string>
+    <string name="ntf_channel_calls">Дзвінки чату RX-msg</string>
     <string name="settings_notifications_mode_title">Служба сповіщень</string>
     <string name="settings_notification_preview_mode_title">Показати попередній перегляд</string>
     <string name="settings_notification_preview_title">Перегляд сповіщень</string>
@@ -1149,7 +1149,7 @@
     <string name="notification_preview_mode_message">Текст повідомлення</string>
     <string name="notification_preview_mode_contact">Ім\'я контакту</string>
     <string name="auth_confirm_credential">Підтвердіть свої облікові дані</string>
-    <string name="you_can_turn_on_lock">Ви можете увімкнути блокування SimpleX через налаштування.</string>
+    <string name="you_can_turn_on_lock">Ви можете увімкнути блокування RX-msg через налаштування.</string>
     <string name="message_delivery_error_desc">Ймовірно, цей контакт видалив з вами зв\'язок.</string>
     <string name="icon_descr_context">Значок контексту</string>
     <string name="images_limit_title">Забагато зображень!</string>
@@ -1250,7 +1250,7 @@
     <string name="turn_off_battery_optimization_button">Дозволити</string>
     <string name="disable_notifications_button">Вимкнути сповіщення</string>
     <string name="turn_off_system_restriction_button">Відкрити налаштування додатка</string>
-    <string name="system_restricted_background_desc">SimpleX не може працювати в фоновому режимі. Ви отримуватимете сповіщення лише тоді, коли програма працює.</string>
+    <string name="system_restricted_background_desc">RX-msg не може працювати в фоновому режимі. Ви отримуватимете сповіщення лише тоді, коли програма працює.</string>
     <string name="system_restricted_background_in_call_title">Обмеженість фонових дзвінків</string>
     <string name="system_restricted_background_in_call_desc">Додаток може бути закритий після 1 хвилини в фоновому режимі.</string>
     <string name="in_reply_to">У відповідь на</string>

@@ -40,7 +40,7 @@
     <string name="learn_more_about_address">O SimpleX adresama</string>
     <string name="above_then_preposition_continuation">iznad, onda:</string>
     <string name="accept_connection_request__question">Prihvati zahtev za vezu?</string>
-    <string name="email_invite_body">Zdravo!\nPoveži se sa mnom pomoću SimpleX Razgovora: %s</string>
+    <string name="email_invite_body">Zdravo!\nPoveži se sa mnom pomoću RX-msg Razgovora: %s</string>
     <string name="icon_descr_group_inactive">Grupa neaktivna</string>
     <string name="group_is_decentralized">U potpunosti decentralizovan - vidljivo samo za članove grupe.</string>
     <string name="group_full_name_field">Celo ime grupe:</string>
@@ -79,7 +79,7 @@
     <string name="forward_files_messages_deleted_after_selection_title">%1$s poruke nisu prosledjene</string>
     <string name="chat_list_groups">Grupe</string>
     <string name="how_to_use_simplex_chat">Kako se koristi</string>
-    <string name="about_simplex_chat">O SimpleX Razgovoru</string>
+    <string name="about_simplex_chat">O RX-msg Razgovoru</string>
     <string name="alert_text_decryption_error_n_messages_failed_to_decrypt">%1$d neuspešno u dešifrovanje poruke.</string>
     <string name="snd_group_event_group_profile_updated">grupni profil ažuriran</string>
     <string name="group_member_status_group_deleted">grupa odstranjena</string>
@@ -1250,7 +1250,7 @@
     <string name="cannot_receive_file">Nije moguće primiti datoteku</string>
     <string name="error_creating_message">Greška pri kreiranju poruke</string>
     <string name="turn_off_system_restriction_button">Otvoriti podešavanja aplikacije</string>
-    <string name="auth_enable_simplex_lock">Omogućiti SimpleX Zaključavanje</string>
+    <string name="auth_enable_simplex_lock">Omogućiti RX-msg Zaključavanje</string>
     <string name="share_file">Podeliti datoteku…</string>
     <string name="send_disappearing_message_custom_time">Prilagođeno vreme</string>
     <string name="servers_info_connected_servers_section_header">Povezani serveri</string>
@@ -1260,7 +1260,7 @@
     <string name="passcode_set">Pin kod postavljen!</string>
     <string name="all_app_data_will_be_cleared">Svi podaci u aplikaciji su odstranjeni.</string>
     <string name="app_passcode_replaced_with_self_destruct">Pin kod aplikacije je zamenjen pin kodom za samouništenje.</string>
-    <string name="settings_section_title_support">Potpori SimpleX Chat</string>
+    <string name="settings_section_title_support">Potpori RX-msg</string>
     <string name="settings_section_title_message_shape">Oblik poruke</string>
     <string name="settings_section_title_icon">Ikona aplikacije</string>
     <string name="database_passphrase">Pristupna fraza baze podataka</string>
@@ -1293,7 +1293,7 @@
     <string name="servers_info_previously_connected_servers_section_header">Prethodno povezani serveri</string>
     <string name="chunks_downloaded">Komadi su preuzeti</string>
     <string name="disable_automatic_deletion_question">Onemogućiti automatsko brisanje poruka?</string>
-    <string name="thank_you_for_installing_simplex">Hvala Vam što ste instalirali SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">Hvala Vam što ste instalirali RX-msg!</string>
     <string name="smp_servers_test_some_failed">Neki serveri nisu prošli test:</string>
     <string name="operator_info_title">Mrežni operator</string>
     <string name="migrate_to_device_try_again">Možete pokušati ponovo.</string>
@@ -1313,7 +1313,7 @@
     <string name="migrate_from_device_check_connection_and_try_again">Proverite internet vezu i pokušajte ponovo</string>
     <string name="servers_info_missing">Bez Informacija, pokušajte ponovo da učitate</string>
     <string name="chunks_deleted">Komadi su odstranjeni</string>
-    <string name="ntf_channel_calls">SimpleX Chat pozivi</string>
+    <string name="ntf_channel_calls">RX-msg pozivi</string>
     <string name="xftp_servers">XFTP serveri</string>
     <string name="network_and_servers">Mreža i serveri</string>
     <string name="configure_ICE_servers">Podesite ICE servere</string>
@@ -1351,7 +1351,7 @@
     <string name="privacy_media_blur_radius_strong">Intenzivno</string>
     <string name="delete_message_mark_deleted_warning">Poruka će biti označena za ostranjivanje. Primaoci će moći da otkriju ovu poruku.</string>
     <string name="privacy_and_security">Privatnost i bezbednost</string>
-    <string name="ntf_channel_messages">SimpleX Chat poruke</string>
+    <string name="ntf_channel_messages">RX-msg poruke</string>
     <string name="migrate_from_device_try_again">Možete pokušati ponovo.</string>
     <string name="migrate_from_device_error_saving_settings">Greška pri čuvanju podešavanja</string>
     <string name="v4_6_group_welcome_message_descr">Postavi poruku koja će biti prikazana novim članovima!</string>
@@ -1410,7 +1410,7 @@
     <string name="servers_info_starting_from">Pokretanje iz %s.</string>
     <string name="your_ice_servers">Vaši ICE serveri</string>
     <string name="use_random_passphrase">Koristiti nasumičnu pristupnu frazu</string>
-    <string name="auth_disable_simplex_lock">Onemogućiti SimpleX Zaključavanje</string>
+    <string name="auth_disable_simplex_lock">Onemogućiti RX-msg Zaključavanje</string>
     <string name="servers_info_reconnect_server_title">Ponovo povezati server?</string>
     <string name="no_received_app_files">Nema primljenih niti poslanih datoteka</string>
     <string name="integrity_msg_bad_hash">neispravan hash poruke</string>

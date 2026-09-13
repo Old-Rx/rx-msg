@@ -2,7 +2,7 @@
 <resources>
     <string name="chat_item_ttl_month">1 mėnuo</string>
     <string name="chat_item_ttl_week">1 savaitė</string>
-    <string name="about_simplex_chat">Apie SimpleX Chat</string>
+    <string name="about_simplex_chat">Apie RX-msg</string>
     <string name="chat_item_ttl_day">1 diena</string>
     <string name="a_plus_b">a + b</string>
     <string name="about_simplex">Apie SimpleX</string>
@@ -261,14 +261,14 @@
     <string name="network_disable_socks">Naudoti tiesioginį interneto ryšį\?</string>
     <string name="update_network_settings_confirmation">Atnaujinti</string>
     <string name="update_network_settings_question">Atnaujinti tinklo nustatymus\?</string>
-    <string name="ntf_channel_messages">SimpleX Chat žinutės</string>
-    <string name="ntf_channel_calls">SimpleX Chat skambučiai</string>
+    <string name="ntf_channel_messages">RX-msg žinutės</string>
+    <string name="ntf_channel_calls">RX-msg skambučiai</string>
     <string name="notification_preview_mode_message_desc">Rodyti kontaktą ir žinutę</string>
     <string name="notification_preview_mode_contact_desc">Rodyti tik kontaktą</string>
     <string name="auth_stop_chat">Sustabdyti pokalbius</string>
     <string name="share_message">Bendrinti žinutę…</string>
     <string name="use_camera_button">Fotoaparatas</string>
-    <string name="thank_you_for_installing_simplex">Dėkojame, kad įdiegėte SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">Dėkojame, kad įdiegėte RX-msg!</string>
     <string name="smp_servers_use_server">Naudoti serverį</string>
     <string name="network_enable_socks">Naudoti SOCKS įgaliotąjį serverį\?</string>
     <string name="core_simplexmq_version">simplexmq: v%s (%2s)</string>
@@ -294,7 +294,7 @@
     <string name="your_privacy">Jūsų privatumas</string>
     <string name="settings_section_title_you">Jūs</string>
     <string name="wrong_passphrase_title">Neteisinga slaptafrazė!</string>
-    <string name="app_name">SimpleX</string>
+    <string name="app_name">RX-msg</string>
     <string name="sender_you_pronoun">jūs</string>
     <string name="description_via_group_link">per grupės nuorodą</string>
     <string name="description_via_contact_address_link">per kontakto adreso nuorodą</string>
@@ -387,7 +387,7 @@
     <string name="connect_via_link">Prisijungti per nuorodą</string>
     <string name="security_code">Saugumo kodas</string>
     <string name="mark_code_verified">Žymėti kaip patvirtintą</string>
-    <string name="chat_lock">SimpleX užraktas</string>
+    <string name="chat_lock">RX-msg užraktas</string>
     <string name="saved_ICE_servers_will_be_removed">Įrašyti WebRTC ICE serveriai bus pašalinti.</string>
     <string name="button_send_direct_message">Siųsti tiesioginę žinutę</string>
     <string name="button_remove_member">Šalinti narį</string>
@@ -402,10 +402,10 @@
     <string name="both_you_and_your_contact_can_send_voice">Tiek jūs, tiek ir jūsų kontaktas gali siųsti balso žinutes.</string>
     <string name="enter_passphrase_notification_desc">Norėdami gauti pranešimus, įveskite duomenų bazės slaptafrazę</string>
     <string name="notification_preview_mode_contact">Kontakto vardas</string>
-    <string name="la_notice_title_simplex_lock">SimpleX užraktas</string>
+    <string name="la_notice_title_simplex_lock">RX-msg užraktas</string>
     <string name="la_notice_turn_on">Įjungti</string>
-    <string name="auth_simplex_lock_turned_on">SimpleX užraktas įjungtas</string>
-    <string name="auth_enable_simplex_lock">Įjungti SimpleX užraktą</string>
+    <string name="auth_simplex_lock_turned_on">RX-msg užraktas įjungtas</string>
+    <string name="auth_enable_simplex_lock">Įjungti RX-msg užraktą</string>
     <string name="message_delivery_error_title">Žinutės pristatymo klaida</string>
     <string name="moderate_message_will_be_deleted_warning">Žinutė bus ištrinta visiems nariams.</string>
     <string name="icon_descr_sent_msg_status_sent">išsiųsta</string>
@@ -444,7 +444,7 @@
     <string name="voice_prohibited_in_this_chat">Balso žinutės šiame pokalbyje yra uždraustos.</string>
     <string name="v4_4_disappearing_messages_desc">Išsiųstos žinutės bus ištrintos po nustatyto laiko.</string>
     <string name="user_unhide">Nebeslėpti</string>
-    <string name="la_lock_mode">SimpleX užrakto veiksena</string>
+    <string name="la_lock_mode">RX-msg užrakto veiksena</string>
     <string name="host_verb">Serveris</string>
     <string name="callstatus_missed">praleistas skambutis</string>
     <string name="enable_lock">Įjungti užraktą</string>
@@ -468,7 +468,7 @@
     <string name="decryption_error">Iššifravimo klaida</string>
     <string name="description_via_group_link_incognito">inkognito per grupės nuorodą</string>
     <string name="smp_server_test_create_file">Sukurti failą</string>
-    <string name="lock_not_enabled">SimpleX užraktas neįjungtas!</string>
+    <string name="lock_not_enabled">RX-msg užraktas neįjungtas!</string>
     <string name="icon_descr_send_message">Siųsti žinutę</string>
     <string name="alert_title_msg_bad_hash">Bloga žinutės maiša</string>
     <string name="messages_section_title">Žinutės</string>
@@ -639,7 +639,7 @@
     <string name="chat_database_section">Pokalbio duomenų bazė</string>
     <string name="v4_6_chinese_spanish_interface">Naudotojo sąsaja kinų ir ispanų kalbomis</string>
     <string name="delivery_receipts_title">Pranešimai apie pristatymą!</string>
-    <string name="auth_disable_simplex_lock">Išjungti SimpleX užraktą</string>
+    <string name="auth_disable_simplex_lock">Išjungti RX-msg užraktą</string>
     <string name="delivery">Pristatymas</string>
     <string name="change_lock_mode">Keisti užrakto veikseną</string>
     <string name="ttl_d">%dd.</string>
@@ -692,7 +692,7 @@
     <string name="ok">Gerai</string>
     <string name="v4_5_private_filenames">Privatūs failų pavadinimai</string>
     <string name="info_menu">Informacija</string>
-    <string name="open_simplex_chat_to_accept_call">Atverkite SimpleX Chat norėdami atsiliepti</string>
+    <string name="open_simplex_chat_to_accept_call">Atverkite RX-msg norėdami atsiliepti</string>
     <string name="desktop_incompatible_version">Nesuderinama versija</string>
     <string name="non_content_uri_alert_title">Neteisingas failo kelias</string>
     <string name="settings_notifications_mode_title">Pranešimų tarnyba</string>
@@ -720,7 +720,7 @@
     <string name="rcv_group_event_open_chat">Atverti</string>
     <string name="open_chat">Atverti pokalbį</string>
     <string name="network_status">Tinklo būsena</string>
-    <string name="email_invite_subject">Bendraukime per Simplex Chat</string>
+    <string name="email_invite_subject">Bendraukime per RX-msg</string>
     <string name="message_too_large">Žinutė per didelė</string>
     <string name="new_in_version">Štai kas naujo %s versijoje</string>
     <string name="only_your_contact_can_send_voice">Tik jūsų kontaktas gali siųsti balso žinutes.</string>
@@ -752,7 +752,7 @@
     <string name="periodic_notifications">Periodiniai pranešimai</string>
     <string name="periodic_notifications_disabled">Periodiniai pranešimai yra išjungti!</string>
     <string name="notification_preview_mode_hidden">Paslėptas</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Įrenginio autentifikacija neįjungta. Galite įjungti SimpleX užraktą nustatymuose, įjungus įrenginio autentifikaciją.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Įrenginio autentifikacija neįjungta. Galite įjungti RX-msg užraktą nustatymuose, įjungus įrenginio autentifikaciją.</string>
     <string name="auth_open_migration_to_another_device">Atidaryti perkėlimo ekraną</string>
     <string name="delete_member_message__question">Ištrinti nario žinutę?</string>
     <string name="chat_with_developers">Kalbėti su kūrėjais</string>
@@ -849,7 +849,7 @@
     <string name="delete_messages__question">Ištrinti %d žinutes?</string>
     <string name="confirm_password">Patvirtinti slaptažodį</string>
     <string name="icon_descr_hang_up">Padėti ragelį</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">Įrenginio autentifikacija išjungta. Išjungiamas SimpleX užraktas.</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">Įrenginio autentifikacija išjungta. Išjungiamas RX-msg užraktas.</string>
     <string name="total_files_count_and_size">%d failas (-ai), kurių bendras dydis yra %s</string>
     <string name="ttl_hours">%d valandos</string>
     <string name="connect_via_link_incognito">Prisijungti inkognito režimu</string>
@@ -864,7 +864,7 @@
     <string name="group_profile_is_stored_on_members_devices">Grupės profilis yra saugomas narių įrenginiuose, ne serveriuose.</string>
     <string name="icon_descr_video_asked_to_receive">Paprašyta gauti vaizdo įrašą</string>
     <string name="email_invite_body">Labas!
-\nPrisijunk prie manęs per SimpleX Chat: %s</string>
+\nPrisijunk prie manęs per RX-msg: %s</string>
     <string name="privacy_redefined">Privatumas apibrėžtas iš naujo</string>
     <string name="share_text_created_at">Sukurta: %s</string>
     <string name="group_member_status_intro_invitation">jungiamasi (supažindinimo pakvietimas)</string>
@@ -1123,9 +1123,9 @@
     <string name="v4_5_italian_interface_descr">Dėkojame naudotojams - prisidėkite per Weblate!</string>
     <string name="is_not_verified">%s nėra patvirtintas</string>
     <string name="possible_slow_function_title">Lėta funkcija</string>
-    <string name="system_restricted_background_desc">SimpleX negali veikti fone. Jūs gausite pranešimus tik kai programėlė yra paleista.</string>
+    <string name="system_restricted_background_desc">RX-msg negali veikti fone. Jūs gausite pranešimus tik kai programėlė yra paleista.</string>
     <string name="database_initialization_error_desc">Duomenų bazė neveikia tinkamai. Bakstelėkite, kad sužinotumėte daugiau</string>
-    <string name="simplex_service_notification_title">SimpleX Chat tarnyba</string>
+    <string name="simplex_service_notification_title">RX-msg tarnyba</string>
     <string name="stop_sharing">Nustoti bendrinti</string>
     <string name="share_with_contacts">Bendrinti su kontaktais</string>
     <string name="next_generation_of_private_messaging">Naujos kartos privatus susirašinėjimas</string>
@@ -1217,7 +1217,7 @@
     <string name="set_database_passphrase">Nustatyti duomenų slaptafrazę</string>
     <string name="set_passphrase">Nustatyti slaptafrazę</string>
     <string name="privacy_show_last_messages">Rodyti paskutines žinutes</string>
-    <string name="settings_section_title_support">Palaikykite SimpleX Chat</string>
+    <string name="settings_section_title_support">Palaikykite RX-msg</string>
     <string name="receipts_section_description_1">Jų galima nepaisyti kontaktų ir grupių nustatymuose.</string>
     <string name="enable_automatic_deletion_message">Šis veiksmas negali būti atšauktas - žinutės išsiųstos ir gautos anksčiau nei pasirinkta bus ištrintos. Tai gali užtrukti kelias minutes.</string>
     <string name="rcv_group_event_n_members_connected">%s, %s ir %d kiti nariai prisijungė</string>
@@ -1352,7 +1352,7 @@
     <string name="smp_server_test_upload_file">Įkelti failą</string>
     <string name="notifications_mode_off">Veikia kai programėlė yra atidaryta</string>
     <string name="la_could_not_be_verified">Negalėjote būti patvirtintas; bandykite vėl.</string>
-    <string name="you_can_turn_on_lock">Galite įjungti SimpleX užraktą per nustatymus.</string>
+    <string name="you_can_turn_on_lock">Galite įjungti RX-msg užraktą per nustatymus.</string>
     <string name="expand_verb">Išplėsti</string>
     <string name="revoke_file__action">Atšaukti failą</string>
     <string name="revoke_file__title">Atšaukti failą?</string>
@@ -1405,7 +1405,7 @@
     <string name="error_connecting_to_server_to_receive_messages">Bandoma prisijungti prie serverio skirto žinučių gavimui iš šio kontakto (klaida: %1$s).</string>
     <string name="trying_to_connect_to_server_to_receive_messages">Bandoma prisijungti prie serverio skirto žinučių gavimui iš šio kontakto.</string>
     <string name="no_details">nėra detalių</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Kad išlaikyti jūsų privatumą, vietoj tiesioginių pranešimų, programėlė turi <b>SimpleX fono tarnybą</b> - ji naudoja kelis procentus akumuliatoriaus per dieną.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Kad išlaikyti jūsų privatumą, vietoj tiesioginių pranešimų, programėlė turi <b>RX-msg fono tarnybą</b> - ji naudoja kelis procentus akumuliatoriaus per dieną.]]></string>
     <string name="periodic_notifications_desc">Programėlė periodiškai gauna naujas žinutes — ji sunaudoja kelis procentus baterijos per dieną. Programa nenaudoja tiesioginių pranešimų — duomenys iš jūsų įrenginio į serverius nesiunčiami.</string>
     <string name="one_time_link">Vienkartinė pakvietimo nuoroda</string>
     <string name="you_wont_lose_your_contacts_if_delete_address">Neprarasite savo kontaktų, jei vėliau ištrinsite savo adresą.</string>
@@ -1572,7 +1572,7 @@
     <string name="app_was_crashed">Rodinys sudužo</string>
     <string name="description_you_shared_one_time_link">pasidalinote vienkartine nuoroda</string>
     <string name="description_you_shared_one_time_link_incognito">pasidalinote vienkartine nuoroda inkognito režimu</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Kad apsaugoti savo informaciją, įjunkite SimpleX užraktą.
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Kad apsaugoti savo informaciją, įjunkite RX-msg užraktą.
 \nJūs būsite prašomi užbaigti autentifikaciją prieš įjungiant šią galimybę.</string>
     <string name="icon_descr_waiting_for_image">Laukiama nuotraukos</string>
     <string name="compose_send_direct_message_to_connect">Siųsti tiesioginę žinutę, kad prisijungti</string>

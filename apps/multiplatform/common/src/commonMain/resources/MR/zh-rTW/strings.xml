@@ -8,7 +8,7 @@
     <string name="chat_item_ttl_day">1 天</string>
     <string name="chat_item_ttl_month">1 個月</string>
     <string name="accept_contact_button">接受</string>
-    <string name="about_simplex_chat">關於 SimpleX Chat</string>
+    <string name="about_simplex_chat">關於 RX-msg</string>
     <string name="accept_connection_request__question">接受連接請求？</string>
     <string name="callstatus_accepted">已接受通話</string>
     <string name="network_enable_socks_info">要在端口啟用 SOCKS 代理伺服器嗎 %d？在啟用這個選項之前，必須先啟用代理伺服器。</string>
@@ -33,8 +33,8 @@
     <string name="allow_to_send_disappearing">允許傳送自動銷毀的訊息。</string>
     <string name="database_initialization_error_title">無法初始化資料庫</string>
     <string name="notifications_mode_service">總是開啟</string>
-    <string name="auth_disable_simplex_lock">關閉 SimpleX 鎖定</string>
-    <string name="auth_enable_simplex_lock">啟用 SimpleX 鎖定</string>
+    <string name="auth_disable_simplex_lock">關閉 RX-msg 鎖定</string>
+    <string name="auth_enable_simplex_lock">啟用 RX-msg 鎖定</string>
     <string name="copy_verb">複製</string>
     <string name="reply_verb">回覆</string>
     <string name="share_verb">分享</string>
@@ -169,7 +169,7 @@
     <string name="share_one_time_link">建立一次性邀請連結</string>
     <string name="to_share_with_your_contact">（分享給你的聯絡人）</string>
     <string name="chat_help_tap_button">點擊按鈕</string>
-    <string name="thank_you_for_installing_simplex">感謝你安裝 SimpleX Chat！</string>
+    <string name="thank_you_for_installing_simplex">感謝你安裝 RX-msg！</string>
     <string name="mute_chat">靜音</string>
     <string name="unmute_chat">解除靜音</string>
     <string name="your_settings">你的設定</string>
@@ -227,7 +227,7 @@
     <string name="v4_5_reduced_battery_usage_descr">更多改進即將推出！</string>
     <string name="v4_5_italian_interface">意大利語言界面</string>
     <string name="v4_5_italian_interface_descr">感謝用戶 - 使用 Weblate 的翻譯貢獻！</string>
-    <string name="app_name">SimpleX</string>
+    <string name="app_name">RX-msg</string>
     <string name="thousand_abbreviation">k</string>
     <string name="connect_via_contact_link">透過聯絡人地址連接？</string>
     <string name="connect_via_invitation_link">透過一次性連結連接？</string>
@@ -256,7 +256,7 @@
     <string name="periodic_notifications_disabled">定期通知已禁用！</string>
     <string name="enter_passphrase_notification_title">需要使用密碼</string>
     <string name="notification_preview_mode_contact_desc">只顯示聯絡人名稱</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">裝置內的螢幕鎖定已關閉。正在關閉 SimpleX 鎖定。</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">裝置內的螢幕鎖定已關閉。正在關閉 RX-msg 鎖定。</string>
     <string name="save_verb">儲存</string>
     <string name="images_limit_title">太多圖片！</string>
     <string name="error_saving_file">儲存檔案的時候出錯</string>
@@ -276,7 +276,7 @@
     <string name="service_notifications">即時通知！</string>
     <string name="service_notifications_disabled">已禁用即時通知功能！</string>
     <string name="database_initialization_error_desc">資料庫目前沒有正常運作。點擊查看更多</string>
-    <string name="ntf_channel_calls">SimpleX Chat 通話來電</string>
+    <string name="ntf_channel_calls">RX-msg 通話來電</string>
     <string name="settings_notifications_mode_title">通知服務</string>
     <string name="settings_notification_preview_mode_title">顯示預覽</string>
     <string name="settings_notification_preview_title">通知預覽</string>
@@ -322,10 +322,10 @@
     <string name="turn_off_battery_optimization"><![CDATA[在下一個對話框中<b>允許它</b>以接收實時通知。]]></string>
     <string name="enter_passphrase_notification_desc">在接收通知之前，請你輸入資料庫的密碼</string>
     <string name="periodic_notifications_desc">應用程式會定期取得新的訊息 — 它每天會消耗百分之幾的電量。應用程式將不使用推送通知 — 你裝置中的數據不會傳送至伺服器。</string>
-    <string name="simplex_service_notification_title">SimpleX Chat 服務</string>
+    <string name="simplex_service_notification_title">RX-msg 服務</string>
     <string name="simplex_service_notification_text">正在接收訊息…</string>
     <string name="hide_notification">隱藏</string>
-    <string name="ntf_channel_messages">SimpleX Chat 訊息</string>
+    <string name="ntf_channel_messages">RX-msg 訊息</string>
     <string name="notifications_mode_off">當應用程式是開啟</string>
     <string name="notifications_mode_periodic">定期啟動</string>
     <string name="notification_preview_mode_message_desc">顯示聯絡人名稱和訊息內容</string>
@@ -333,12 +333,12 @@
     <string name="notification_preview_somebody">隱藏聯絡人：</string>
     <string name="notification_preview_new_message">新訊息</string>
     <string name="notification_contact_connected">已連接</string>
-    <string name="la_notice_title_simplex_lock">SimpleX 鎖定</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">為了保護你的個人訊息，開啟 SimpleX 鎖定。
+    <string name="la_notice_title_simplex_lock">RX-msg 鎖定</string>
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">為了保護你的個人訊息，開啟 RX-msg 鎖定。
 \n在啟用此功能之前，系統將提示你完成螢幕鎖定的功能。</string>
     <string name="la_notice_turn_on">開啟</string>
-    <string name="auth_simplex_lock_turned_on">已開啟SimpleX 鎖定</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">你的裝置沒有啟用螢幕鎖定。你可以通過設定內啟用螢幕鎖定，當你啟用後就可以使用 SimpleX 鎖定。</string>
+    <string name="auth_simplex_lock_turned_on">已開啟RX-msg 鎖定</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">你的裝置沒有啟用螢幕鎖定。你可以通過設定內啟用螢幕鎖定，當你啟用後就可以使用 RX-msg 鎖定。</string>
     <string name="edit_verb">編輯</string>
     <string name="delete_verb">刪除</string>
     <string name="reveal_verb">展露</string>
@@ -358,7 +358,7 @@
     <string name="send_live_message_desc">傳送實況訊息 - 這會即時顯示你在輸入中的文字</string>
     <string name="connect_via_link_or_qr_from_clipboard_or_in_person">（掃描或使用剪貼薄貼上）</string>
     <string name="toast_permission_denied">權限被拒絕！</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[為了保護隱私，<b>SimpleX 在背景運作</b>而不是使用推送通知。]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[為了保護隱私，<b>RX-msg 在背景運作</b>而不是使用推送通知。]]></string>
     <string name="periodic_notifications">定期通知</string>
     <string name="notifications_mode_periodic_desc">每十分鐘會檢查一次訊息，最快可設為每分鐘檢查一次</string>
     <string name="notification_preview_mode_message">訊息文字</string>
@@ -534,7 +534,7 @@
     <string name="your_chat_profiles">你的個人檔案</string>
     <string name="database_passphrase_and_export">資料庫密碼和匯出</string>
     <string name="send_us_an_email">傳送電郵</string>
-    <string name="chat_lock">SimpleX 鎖定</string>
+    <string name="chat_lock">RX-msg 鎖定</string>
     <string name="smp_servers">SMP 伺服器</string>
     <string name="smp_servers_preset_address">預設伺服器地址</string>
     <string name="smp_servers_test_server">測試伺服器</string>
@@ -555,7 +555,7 @@
     <string name="no_call_on_lock_screen">停用</string>
     <string name="icon_descr_call_missed">已錯過通話</string>
     <string name="open_verb">開啟</string>
-    <string name="open_simplex_chat_to_accept_call">開啟  SimpleX Chat 以接受通話</string>
+    <string name="open_simplex_chat_to_accept_call">開啟  RX-msg 以接受通話</string>
     <string name="icon_descr_call_rejected">已拒絕通話</string>
     <string name="show_call_on_lock_screen">顯示</string>
     <string name="icon_descr_call_connecting">連接通話中</string>
@@ -667,7 +667,7 @@
     <string name="settings_section_title_device">裝置</string>
     <string name="settings_section_title_help">幫助</string>
     <string name="settings_section_title_settings">設定</string>
-    <string name="settings_section_title_support">幫助 SimpleX Chat</string>
+    <string name="settings_section_title_support">幫助 RX-msg</string>
     <string name="settings_section_title_chats">聊天</string>
     <string name="settings_developer_tools">開發者工具</string>
     <string name="settings_section_title_socks">SOCKS 代理伺服器</string>
@@ -1018,8 +1018,8 @@
     <string name="la_enter_app_passcode">輸入密碼</string>
     <string name="la_no_app_password">沒有應用程式密碼</string>
     <string name="la_lock_mode_passcode">輸入密碼</string>
-    <string name="la_lock_mode">SimpleX 鎖定模式</string>
-    <string name="lock_not_enabled">未啟用 SimpleX 鎖定！</string>
+    <string name="la_lock_mode">RX-msg 鎖定模式</string>
+    <string name="lock_not_enabled">未啟用 RX-msg 鎖定！</string>
     <string name="host_verb">主機</string>
     <string name="disable_onion_hosts_when_not_supported"><![CDATA[如果SOCKS 代理不支援它們，請設定 <i>Use .onion hosts</i>為否。]]></string>
     <string name="lock_mode">鎖定模式</string>
@@ -1079,7 +1079,7 @@
     <string name="xftp_servers">XFTP 伺服器</string>
     <string name="la_lock_mode_system">系統認證</string>
     <string name="la_could_not_be_verified">你未能通過認證；請再試一次。</string>
-    <string name="you_can_turn_on_lock">你可以透過設定啟用 SimpleX 鎖定。</string>
+    <string name="you_can_turn_on_lock">你可以透過設定啟用 RX-msg 鎖定。</string>
     <string name="la_mode_system">系統</string>
     <string name="alert_text_msg_bad_id">此ID的下一則訊息是錯誤（小於或等於上一則的）。
 \n當一些錯誤出現或你的連結被破壞時會發生。</string>
@@ -1106,7 +1106,7 @@
     <string name="dont_create_address">不用建立聯絡地址</string>
     <string name="enter_welcome_message_optional">輸入歡迎訊息… （可選擇的）</string>
     <string name="email_invite_body">你好！ 
-\n透過 SimpleX Chat 來和我連接吧：%s</string>
+\n透過 RX-msg 來和我連接吧：%s</string>
     <string name="save_auto_accept_settings">儲存自動接受的設定</string>
     <string name="save_settings_question">儲存設定？</string>
     <string name="invite_friends">邀請朋友</string>
@@ -1158,7 +1158,7 @@
     <string name="your_contacts_will_remain_connected">你的聯絡人會保持連接。</string>
     <string name="all_your_contacts_will_remain_connected_update_sent">你的所有聯絡人會保持連接。更新了的個人檔案將傳送給你的聯絡人。</string>
     <string name="add_address_to_your_profile">新增地址至你的個人檔案，以便你的聯絡人可以與其他人分享。更新了的個人檔案將傳送給你的聯絡人。</string>
-    <string name="email_invite_subject">讓我們在 SimpleX Chat中聊天</string>
+    <string name="email_invite_subject">讓我們在 RX-msg中聊天</string>
     <string name="import_theme_error_desc">確保檔案具有正確的 YAML 語法。匯出主題以獲得主題檔案結構的範例。</string>
     <string name="message_reactions">訊息反應</string>
     <string name="allow_your_contacts_adding_message_reactions">允許你的聯絡人新增訊息互動。</string>
@@ -1913,7 +1913,7 @@
     <string name="button_add_team_members">新增團隊成員</string>
     <string name="accept_pending_member_alert_title">接受成員</string>
     <string name="chat_list_add_list">新增清單</string>
-    <string name="system_restricted_background_desc">SimpleX 無法在背景執行。你只有在應用程式執行時才會收到通知。</string>
+    <string name="system_restricted_background_desc">RX-msg 無法在背景執行。你只有在應用程式執行時才會收到通知。</string>
     <string name="network_session_mode_session">應用程式工作階段</string>
     <string name="display_name_accepted_invitation">已接受邀請</string>
     <string name="failed_to_create_user_invalid_desc">此顯示名稱無效。請選擇另一個名稱。</string>
@@ -2850,10 +2850,10 @@
     <string name="close_behavior_dialog_text">如果選擇「關閉」，將無法接收訊息。\n你可以稍後在「外觀」設定中變更。</string>
     <string name="close_behavior_dialog_close">關閉應用程式</string>
     <string name="close_behavior_dialog_minimize">最小化到系統匣</string>
-    <string name="tray_show">顯示 SimpleX</string>
-    <string name="tray_quit">結束 SimpleX</string>
-    <string name="tray_tooltip">SimpleX</string>
-    <string name="tray_tooltip_unread">SimpleX — %d 則未讀</string>
+    <string name="tray_show">顯示 RX-msg</string>
+    <string name="tray_quit">結束 RX-msg</string>
+    <string name="tray_tooltip">RX-msg</string>
+    <string name="tray_tooltip_unread">RX-msg — %d 則未讀</string>
     <string name="appearance_minimize_to_tray">關閉到系統匣</string>
     <string name="appearance_minimize_to_tray_desc">在背景執行以接收訊息</string>
     <string name="badge_supports_simplex">%s 支持 SimpleX Chat。</string>

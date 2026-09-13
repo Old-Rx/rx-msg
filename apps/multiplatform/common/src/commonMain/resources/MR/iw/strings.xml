@@ -3,7 +3,7 @@
     <string name="color_primary">הדגשה</string>
     <string name="accept_contact_button">אשר</string>
     <string name="accept_connection_request__question">לאשר בקשת חיבור\?</string>
-    <string name="about_simplex_chat">אודות SimpleX Chat</string>
+    <string name="about_simplex_chat">אודות RX-msg</string>
     <string name="about_simplex">אודות SimpleX</string>
     <string name="accept_call_on_lock_screen">ענה</string>
     <string name="chat_item_ttl_week">שבוע</string>
@@ -313,8 +313,8 @@
     <string name="delete_group_question">למחוק קבוצה\?</string>
     <string name="desktop_scan_QR_code_from_app_via_scan_QR_code"><![CDATA[💻 שולחן עבודה: סירקו את קוד ה־QR המוצג באפליקציה, באמצעות <b>סריקת קוד QR</b>.]]></string>
     <string name="settings_section_title_device">מכשיר</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">נעילת המכשיר מושבתת. מכבה נעילת SimpleX.</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">נעילת המכשיר אינה מופעלת. ניתן להפעיל את נעילת SimpleX, לאחר שתפעילו את נעילת המכשיר.</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">נעילת המכשיר מושבתת. מכבה נעילת RX-msg.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">נעילת המכשיר אינה מופעלת. ניתן להפעיל את נעילת RX-msg, לאחר שתפעילו את נעילת המכשיר.</string>
     <string name="total_files_count_and_size">%d קבצים בגודל כולל של %s</string>
     <string name="server_error">שגיאה</string>
     <string name="error_loading_smp_servers">שגיאה בטעינת שרתי SMP</string>
@@ -325,7 +325,7 @@
     <string name="la_minutes">%d דקות</string>
     <string name="la_seconds">%d שניות</string>
     <string name="la_enter_app_passcode">הזינו קוד גישה</string>
-    <string name="auth_enable_simplex_lock">הפעלת נעילת SimpleX</string>
+    <string name="auth_enable_simplex_lock">הפעלת נעילת RX-msg</string>
     <string name="edit_verb">ערוך</string>
     <string name="display_name__field">שם פרופיל:</string>
     <string name="edit_image">ערוך תמונה</string>
@@ -352,7 +352,7 @@
     <string name="smp_server_test_download_file">הורד קובץ</string>
     <string name="error_changing_address">שגיאה בשינוי כתובת</string>
     <string name="error_deleting_user">שגיאה במחיקת פרופיל משתמש</string>
-    <string name="auth_disable_simplex_lock">השבתת נעילת SimpleX</string>
+    <string name="auth_disable_simplex_lock">השבתת נעילת RX-msg</string>
     <string name="dont_create_address">לא ליצור כתובת</string>
     <string name="no_call_on_lock_screen">מושבת</string>
     <string name="integrity_msg_duplicate">הודעה כפולה</string>
@@ -477,7 +477,7 @@
     <string name="if_you_cant_meet_in_person">אם לא ניתן להיפגש פנים אל פנים, הציגו את קוד ה־QR בשיחת וידאו, או שתפו את הקישור.</string>
     <string name="how_to_use_simplex_chat">איך להשתמש בזה</string>
     <string name="email_invite_body">היי!
-\nאפשר להתחבר אליי דרך SimpleX Chat: %s</string>
+\nאפשר להתחבר אליי דרך RX-msg: %s</string>
     <string name="hidden_profile_password">סיסמת פרופיל מוסתרת</string>
     <string name="hide_profile">הסתר פרופיל</string>
     <string name="how_to_use_markdown">איך להשתמש במרקדאון</string>
@@ -581,7 +581,7 @@
     <string name="auth_log_in_using_credential">התחבר באמצעות האישור שלך</string>
     <string name="learn_more">למדו עוד</string>
     <string name="markdown_help">עזרה במרקדאון</string>
-    <string name="email_invite_subject">בואו נדבר ב־Simplex Chat</string>
+    <string name="email_invite_subject">בואו נדבר ב־RX-msg</string>
     <string name="keychain_error">שגיאת Keychain</string>
     <string name="join_group_incognito_button">הצטרף עם זהות נסתרת</string>
     <string name="leave_group_question">לעזוב קבוצה\?</string>
@@ -699,7 +699,7 @@
     <string name="toast_permission_denied">ההרשאה נדחתה!</string>
     <string name="image_descr_profile_image">תמונת פרופיל</string>
     <string name="profile_update_will_be_sent_to_contacts">עדכון הפרופיל יישלח לאנשי הקשר שלך.</string>
-    <string name="open_simplex_chat_to_accept_call">פיתחו את Simplex Chat כדי לענות לשיחה.</string>
+    <string name="open_simplex_chat_to_accept_call">פיתחו את RX-msg כדי לענות לשיחה.</string>
     <string name="v4_5_message_draft_descr">שמירת טיוטת ההודעה האחרונה, עם קבצים מצורפים.</string>
     <string name="prohibit_message_reactions_group">לאסור תגובות אמוג׳י להודעות.</string>
     <string name="v4_5_private_filenames">שמות קבצים פרטיים</string>
@@ -920,7 +920,7 @@
     <string name="callstate_starting">מתחיל…</string>
     <string name="v4_6_audio_video_calls_descr">תמיכה ב־Bluetooth ושיפורים אחרים.</string>
     <string name="la_lock_mode_system">אימות מערכת</string>
-    <string name="la_lock_mode">מצב נעילת SimpleX</string>
+    <string name="la_lock_mode">מצב נעילת RX-msg</string>
     <string name="share_image">שתף מדיה…</string>
     <string name="share_message">שתף הודעה…</string>
     <string name="add_contact_or_create_group">התחל צ׳אט חדש</string>
@@ -932,22 +932,22 @@
     <string name="alert_title_skipped_messages">הודעות שדולגו</string>
     <string name="language_system">מערכת</string>
     <string name="settings_notification_preview_mode_title">הצג תצוגה מקדימה</string>
-    <string name="ntf_channel_messages">הודעות SimpleX Chat</string>
+    <string name="ntf_channel_messages">הודעות RX-msg</string>
     <string name="v4_6_group_welcome_message_descr">הגדירו את ההודעה המוצגת לחברי קבוצה חדשים!</string>
-    <string name="ntf_channel_calls">שיחות SimpleX Chat</string>
-    <string name="auth_simplex_lock_turned_on">נעילת SimpleX מופעלת</string>
+    <string name="ntf_channel_calls">שיחות RX-msg</string>
+    <string name="auth_simplex_lock_turned_on">נעילת RX-msg מופעלת</string>
     <string name="share_verb">שתף</string>
     <string name="stop_file__action">עצור קובץ</string>
     <string name="stop_snd_file__title">לעצור שליחת קובץ\?</string>
     <string name="share_file">שתף קובץ…</string>
     <string name="icon_descr_settings">הגדרות</string>
     <string name="show_QR_code">הצג קוד QR</string>
-    <string name="chat_lock">נעילת SimpleX</string>
+    <string name="chat_lock">נעילת RX-msg</string>
     <string name="star_on_github">כוכב ב־GitHub</string>
     <string name="share_address_with_contacts_question">לשתף כתובת עם אנשי קשר?</string>
     <string name="stop_sharing">עצור שיתוף</string>
     <string name="set_passcode">הגדרת קוד גישה</string>
-    <string name="la_notice_title_simplex_lock">נעילת SimpleX</string>
+    <string name="la_notice_title_simplex_lock">נעילת RX-msg</string>
     <string name="share_invitation_link">שתף קישור חד־פעמי</string>
     <string name="is_not_verified">%s אינו מאומת</string>
     <string name="is_verified">%s מאומת</string>
@@ -962,7 +962,7 @@
     <string name="notifications_mode_periodic">מתחיל מעת לעת</string>
     <string name="notification_preview_mode_contact_desc">הצג איש קשר בלבד</string>
     <string name="notification_preview_mode_message_desc">הצג איש קשר והודעה</string>
-    <string name="lock_not_enabled">נעילת SimpleX לא מופעלת!</string>
+    <string name="lock_not_enabled">נעילת RX-msg לא מופעלת!</string>
     <string name="auth_stop_chat">עצירת צ׳אט</string>
     <string name="stop_rcv_file__title">לעצור קבלת קובץ\?</string>
     <string name="switch_receiving_address_question">לשנות כתובת קבלה\?</string>
@@ -973,7 +973,7 @@
     <string name="icon_descr_speaker_off">רמקול כבוי</string>
     <string name="icon_descr_speaker_on">רמקול פעיל</string>
     <string name="settings_section_title_settings">הגדרות</string>
-    <string name="settings_section_title_support">תמיכה ב־SimpleX Chat</string>
+    <string name="settings_section_title_support">תמיכה ב־RX-msg</string>
     <string name="stop_chat_question">לעצור צ׳אט\?</string>
     <string name="stop_chat_to_export_import_or_delete_chat_database">עיצרו את הצ׳אט כדי לייצא, לייבא או למחוק את מסד הנתונים. לא תוכלו לקבל ולשלוח הודעות בזמן שהצ׳אט מופסק.</string>
     <string name="stop_chat_confirmation">עצור</string>
@@ -1010,7 +1010,7 @@
     <string name="database_initialization_error_desc">מסד הנתונים אינו פועל כראוי. הקישו למידע נוסף</string>
     <string name="this_text_is_available_in_settings">טקסט זה זמין בהגדרות</string>
     <string name="images_limit_title">יותר מדי תמונות!</string>
-    <string name="thank_you_for_installing_simplex">תודה שהתקנתם את SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">תודה שהתקנתם את RX-msg!</string>
     <string name="this_link_is_not_a_valid_connection_link">קישור זה אינו קישור חיבור תקין!</string>
     <string name="theme_colors_section_title">צבעי ממשק</string>
     <string name="member_role_will_be_changed_with_invitation">התפקיד ישתנה ל־"%s". החבר יקבל הזמנה חדשה.</string>
@@ -1040,7 +1040,7 @@
     <string name="using_simplex_chat_servers">משתמש בשרתי SimpleX Chatז</string>
     <string name="trying_to_connect_to_server_to_receive_messages">מנסה להתחבר לשרת המשמש לקבלת הודעות מאיש קשר זה.</string>
     <string name="connection_error_auth_desc">אלא אם איש הקשר שלכם מחק את החיבור או שהקישור הזה כבר היה בשימוש, זה עשוי להיות באג - אנא דווחו על כך. \nכדי להתחבר, אנא בקשו מאיש הקשר שלכם ליצור קישור חיבור נוסף ובידקו שיש לכם חיבור יציב לרשת.</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">כדי להגן על המידע שלכם, הפעילו את SimpleX Lock.
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">כדי להגן על המידע שלכם, הפעילו את RX-msg Lock.
 \nתתבקשו להשלים את האימות לפני שתכונה זו תופעל.</string>
     <string name="smp_servers_use_server">השתמש בשרת</string>
     <string name="network_socks_toggle_use_socks_proxy">השתמש בפרוקסי SOCKS</string>
@@ -1049,7 +1049,7 @@
     <string name="upgrade_and_open_chat">שדרג ופתח צ׳אט</string>
     <string name="v4_5_private_filenames_descr">כדי להגן על אזור הזמן, קובצי תמונה/קול משתמשים ב־UTC.</string>
     <string name="smp_server_test_upload_file">העלה קובץ</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[כדי לשפר את הפרטיות <b>SimpleX  רץ ברקע</b> במקום להשתמש בpush notifications.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[כדי לשפר את הפרטיות <b>RX-msg  רץ ברקע</b> במקום להשתמש בpush notifications.]]></string>
     <string name="enter_passphrase_notification_desc">כדי לקבל התראות, יש להזין את סיסמת מסד הנתונים</string>
     <string name="auth_unlock">בטל נעילה</string>
     <string name="icon_descr_sent_msg_status_unauthorized_send">שליחה לא מורשית</string>
@@ -1084,7 +1084,7 @@
     <string name="callstate_waiting_for_confirmation">ממתין לאישור…</string>
     <string name="callstate_waiting_for_answer">ממתין למענה…</string>
     <string name="we_do_not_store_contacts_or_messages_on_servers">איננו מאחסנים את אנשי הקשר או ההודעות שלך (לאחר המסירה) בשרתים.</string>
-    <string name="app_name">SimpleX</string>
+    <string name="app_name">RX-msg</string>
     <string name="sender_you_pronoun">אתם</string>
     <string name="description_via_contact_address_link">באמצעות קישור לכתובת איש קשר</string>
     <string name="description_via_group_link">באמצעות קישור לקבוצה</string>
@@ -1108,7 +1108,7 @@
     <string name="you_can_start_chat_via_setting_or_by_restarting_the_app">באפשרותך להתחיל את הצ׳אט באמצעות הגדרות האפליקציה / מסד נתונים או על ידי הפעלה מחדש של האפליקציה.</string>
     <string name="chat_preferences_you_allow">אתם מאפשרים</string>
     <string name="you_are_already_connected_to_vName_via_this_link">אתם כבר מחוברים ל־%1$s.</string>
-    <string name="simplex_service_notification_title">שירות SimpleX Chat</string>
+    <string name="simplex_service_notification_title">שירות RX-msg</string>
     <string name="la_could_not_be_verified">לא ניתן היה לאמת אתכם; אנא נסו שוב.</string>
     <string name="welcome">ברוכים הבאים!</string>
     <string name="personal_welcome">ברוכ/ה הבא/ה %1$s!</string>
@@ -1143,7 +1143,7 @@
     <string name="chat_preferences_yes">כן</string>
     <string name="simplex_link_connection">דרך %1$s</string>
     <string name="connected_to_server_to_receive_messages_from_contact">אתם מחוברים לשרת המשמש לקבלת הודעות מאיש קשר זה.</string>
-    <string name="you_can_turn_on_lock">באפשרותך להפעיל את SimpleX Lock דרך ההגדרות.</string>
+    <string name="you_can_turn_on_lock">באפשרותך להפעיל את RX-msg Lock דרך ההגדרות.</string>
     <string name="you_have_no_chats">אין לך צ׳אטים</string>
     <string name="waiting_for_video">ממתין לסרטון</string>
     <string name="waiting_for_file">ממתין לקובץ</string>
@@ -1333,7 +1333,7 @@
     <string name="receipts_groups_enable_keep_overrides">הפעל (שמור על עקיפות קבוצה)</string>
     <string name="receipts_groups_title_enable">להפעיל קבלות לקבוצות\?</string>
     <string name="rcv_group_event_2_members_connected">%s ו-%s מחוברים</string>
-    <string name="system_restricted_background_desc">SimpleX לא יכול לרוץ ברקע. תקבל את ההתראות רק כשהאפליקציה פועלת.</string>
+    <string name="system_restricted_background_desc">RX-msg לא יכול לרוץ ברקע. תקבל את ההתראות רק כשהאפליקציה פועלת.</string>
     <string name="rcv_group_event_n_members_connected">%s, %s ו-%d חברים אחרים מחוברים</string>
     <string name="system_restricted_background_in_call_desc">האפליקציה עשויה להיסגר לאחר דקה אחת ברקע.</string>
     <string name="send_receipts_disabled_alert_msg">לקבוצה זו יש יותר מ-%1$d חברים, קבלות מסירה לא נשלחות.</string>

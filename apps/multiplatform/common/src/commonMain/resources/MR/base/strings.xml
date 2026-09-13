@@ -1,5 +1,7 @@
 <resources>
   <string name="app_name">RX-msg</string>
+  <string name="image_descr_rx_msg_logo">RX-msg logo</string>
+  <string name="rx_msg_based_on_simplex">Built on the open SimpleX protocol.</string>
 
   <string name="thousand_abbreviation">k</string>
 
@@ -265,7 +267,7 @@
   <string name="icon_descr_instant_notifications">Instant notifications</string>
   <string name="service_notifications">Instant notifications!</string>
   <string name="service_notifications_disabled">Instant notifications are disabled!</string>
-  <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[To improve privacy, <b>SimpleX runs in background</b> instead of using push notifications.]]></string>
+  <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[To improve privacy, <b>RX-msg runs in background</b> instead of using push notifications.]]></string>
   <string name="it_can_disabled_via_settings_notifications_still_shown"><![CDATA[<b>It can be disabled via settings</b> – notifications will still be shown while the app is running.]]></string>
   <string name="turn_off_battery_optimization"><![CDATA[<b>Allow it</b> in the next dialog to receive notifications instantly.]]></string>
   <string name="turning_off_service_and_periodic">Battery optimization is active, turning off background service and periodic requests for new messages. You can re-enable them via settings.</string>
@@ -275,7 +277,7 @@
   <string name="turn_off_battery_optimization_button">Allow</string>
   <string name="turn_off_system_restriction_button">Open app settings</string>
   <string name="disable_notifications_button">Disable notifications</string>
-  <string name="system_restricted_background_desc">SimpleX can\'t run in background. You will receive the notifications only when the app is running.</string>
+  <string name="system_restricted_background_desc">RX-msg can\'t run in background. You will receive the notifications only when the app is running.</string>
   <string name="system_restricted_background_warn"><![CDATA[To enable notifications, please choose <b>App battery usage</b> / <b>Unrestricted</b> in the app settings.]]></string>
   <string name="system_restricted_background_in_call_title">No background calls</string>
   <string name="system_restricted_background_in_call_desc">The app may be closed after 1 minute in background.</string>
@@ -287,7 +289,7 @@
   <string name="xiaomi_ignore_battery_optimization"><![CDATA[<b>Xiaomi devices</b>: please enable Autostart in the system settings for notifications to work.]]></string>
 
   <!-- SimpleX Chat foreground Service -->
-  <string name="simplex_service_notification_title">SimpleX Chat service</string>
+  <string name="simplex_service_notification_title">RX-msg service</string>
   <string name="simplex_service_notification_text">Receiving messages…</string>
   <string name="call_service_notification_audio_call">Audio call</string>
   <string name="call_service_notification_video_call">Video call</string>
@@ -295,8 +297,8 @@
   <string name="hide_notification">Hide</string>
 
   <!-- Notification channels -->
-  <string name="ntf_channel_messages">SimpleX Chat messages</string>
-  <string name="ntf_channel_calls">SimpleX Chat calls</string>
+  <string name="ntf_channel_messages">RX-msg messages</string>
+  <string name="ntf_channel_calls">RX-msg calls</string>
 
   <!-- Notifications -->
   <string name="settings_notifications_mode_title">Notification service</string>
@@ -321,10 +323,10 @@
   <string name="error_showing_desktop_notification">Error showing notification, contact developers.</string>
 
   <!-- local authentication notice - SimpleXAPI.kt -->
-  <string name="la_notice_title_simplex_lock">SimpleX Lock</string>
-  <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">To protect your information, turn on SimpleX Lock.\nYou will be prompted to complete authentication before this feature is enabled.</string>
+  <string name="la_notice_title_simplex_lock">RX-msg Lock</string>
+  <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">To protect your information, turn on RX-msg Lock.\nYou will be prompted to complete authentication before this feature is enabled.</string>
   <string name="la_notice_turn_on">Turn on</string>
-  <string name="la_lock_mode">SimpleX Lock mode</string>
+  <string name="la_lock_mode">RX-msg Lock mode</string>
   <string name="la_lock_mode_system">System authentication</string>
   <string name="la_lock_mode_passcode">Passcode entry</string>
   <string name="la_auth_failed">Authentication failed</string>
@@ -340,22 +342,22 @@
   <string name="la_please_remember_to_store_password">Please remember or store it securely - there is no way to recover a lost password!</string>
 
   <!-- LocalAuthentication.kt -->
-  <string name="auth_simplex_lock_turned_on">SimpleX Lock turned on</string>
+  <string name="auth_simplex_lock_turned_on">RX-msg Lock turned on</string>
   <string name="auth_you_will_be_required_to_authenticate_when_you_start_or_resume">You will be required to authenticate when you start or resume the app after 30 seconds in background.</string>
   <string name="auth_unlock">Unlock</string>
   <string name="auth_log_in_using_credential">Log in using your credential</string>
-  <string name="auth_enable_simplex_lock">Enable SimpleX Lock</string>
-  <string name="auth_disable_simplex_lock">Disable SimpleX Lock</string>
+  <string name="auth_enable_simplex_lock">Enable RX-msg Lock</string>
+  <string name="auth_disable_simplex_lock">Disable RX-msg Lock</string>
   <string name="auth_confirm_credential">Confirm your credential</string>
   <string name="auth_unavailable">Authentication unavailable</string>
-  <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Device authentication is not enabled. You can turn on SimpleX Lock via Settings, once you enable device authentication.</string>
-  <string name="auth_device_authentication_is_disabled_turning_off">Device authentication is disabled. Turning off SimpleX Lock.</string>
+  <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Device authentication is not enabled. You can turn on RX-msg Lock via Settings, once you enable device authentication.</string>
+  <string name="auth_device_authentication_is_disabled_turning_off">Device authentication is disabled. Turning off RX-msg Lock.</string>
   <string name="auth_stop_chat">Stop chat</string>
   <string name="auth_open_chat_console">Open chat console</string>
   <string name="auth_open_chat_profiles">Change chat profiles</string>
   <string name="auth_open_migration_to_another_device">Open migration screen</string>
-  <string name="lock_not_enabled">SimpleX Lock not enabled!</string>
-  <string name="you_can_turn_on_lock">You can turn on SimpleX Lock via Settings.</string>
+  <string name="lock_not_enabled">RX-msg Lock not enabled!</string>
+  <string name="you_can_turn_on_lock">You can turn on RX-msg Lock via Settings.</string>
 
   <!-- Chat Alerts - ChatItemView.kt -->
   <string name="message_delivery_error_title">Message delivery error</string>
@@ -818,7 +820,7 @@
   <string name="gallery_video_button">Video</string>
 
   <!-- help - ChatHelpView.kt -->
-  <string name="thank_you_for_installing_simplex">Thank you for installing SimpleX Chat!</string>
+  <string name="thank_you_for_installing_simplex">Thank you for installing RX-msg!</string>
   <string name="you_can_connect_to_simplex_chat_founder"><![CDATA[You can <font color="#0088ff">connect to SimpleX Chat developers to ask any questions and to receive updates</font>.]]></string>
   <string name="to_start_a_new_chat_help_header">To start a new chat</string>
   <string name="chat_help_tap_button">Tap button</string>
@@ -1029,13 +1031,13 @@
   <string name="your_chat_profiles">Your chat profiles</string>
   <string name="create_chat_profile">Create chat profile</string>
   <string name="database_passphrase_and_export">Database passphrase &amp; export</string>
-  <string name="about_simplex_chat">About SimpleX Chat</string>
+  <string name="about_simplex_chat">About RX-msg</string>
   <string name="how_to_use_simplex_chat">How to use it</string>
   <string name="markdown_help">Markdown help</string>
   <string name="markdown_in_messages">Markdown in messages</string>
   <string name="chat_with_the_founder">Send questions and ideas</string>
   <string name="send_us_an_email">Send us email</string>
-  <string name="chat_lock">SimpleX Lock</string>
+  <string name="chat_lock">RX-msg Lock</string>
   <string name="chat_console">Chat console</string>
   <string name="message_servers">Message servers</string>
   <string name="smp_servers">SMP servers</string>
@@ -1218,8 +1220,8 @@
   <string name="save_auto_accept_settings">Save SimpleX address settings</string>
   <string name="delete_address">Delete address</string>
   <string name="invite_friends">Invite friends</string>
-  <string name="email_invite_subject">Let\'s talk in SimpleX Chat</string>
-  <string name="email_invite_body">Hi!\nConnect to me via SimpleX Chat: %s</string>
+  <string name="email_invite_subject">Let\'s talk in RX-msg</string>
+  <string name="email_invite_body">Hi!\nConnect to me via RX-msg: %s</string>
   <string name="for_social_media">For social media</string>
   <string name="or_to_share_privately">Or to share privately</string>
   <string name="simplex_address_or_1_time_link">SimpleX address or 1-time link?</string>
@@ -1464,7 +1466,7 @@
   <string name="relay_server_if_necessary">Relay server is only used if necessary. Another party can observe your IP address.</string>
 
   <!-- Call Lock Screen -->
-  <string name="open_simplex_chat_to_accept_call">Open SimpleX Chat to accept call</string>
+  <string name="open_simplex_chat_to_accept_call">Open RX-msg to accept call</string>
   <string name="allow_accepting_calls_from_lock_screen">Enable calls from lock screen via Settings.</string>
   <string name="open_verb">Open</string>
   <string name="open_external_link_title">Open external link?</string>
@@ -1601,7 +1603,7 @@
   <string name="settings_section_title_settings">Settings</string>
   <string name="settings_section_title_chat_database">Chat database</string>
   <string name="settings_section_title_help">Help</string>
-  <string name="settings_section_title_support">Support SimpleX Chat</string>
+  <string name="settings_section_title_support">Support RX-msg</string>
   <string name="settings_section_title_app">App</string>
   <string name="settings_section_title_device">Device</string>
   <string name="settings_section_title_chats">Chats</string>
@@ -3193,10 +3195,10 @@
   <string name="close_behavior_dialog_text">If you choose Close, messages won\'t be received.\nYou can change it later in Appearance settings.</string>
   <string name="close_behavior_dialog_close">Close the app</string>
   <string name="close_behavior_dialog_minimize">Minimize to tray</string>
-  <string name="tray_show">Show SimpleX</string>
-  <string name="tray_quit">Quit SimpleX</string>
-  <string name="tray_tooltip">SimpleX</string>
-  <string name="tray_tooltip_unread">SimpleX — %d unread</string>
+  <string name="tray_show">Show RX-msg</string>
+  <string name="tray_quit">Quit RX-msg</string>
+  <string name="tray_tooltip">RX-msg</string>
+  <string name="tray_tooltip_unread">RX-msg — %d unread</string>
   <string name="appearance_minimize_to_tray">Close to tray</string>
   <string name="appearance_minimize_to_tray_desc">Runs in background to receive messages</string>
   <string name="badge_supports_simplex">%s supports SimpleX Chat.</string>

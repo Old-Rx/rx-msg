@@ -387,7 +387,7 @@ fun IncomingCallLockScreenAlertLayout(
         LockScreenCallButton(stringResource(MR.strings.accept), painterResource(R.drawable.ic_check_filled), SimplexGreen, acceptCall)
       }
     } else if (callOnLockScreen == CallOnLockScreen.SHOW) {
-      SimpleXLogo()
+      AppLogo()
       Text(stringResource(MR.strings.open_simplex_chat_to_accept_call), textAlign = TextAlign.Center, lineHeight = 22.sp)
       Text(stringResource(MR.strings.allow_accepting_calls_from_lock_screen), textAlign = TextAlign.Center, style = MaterialTheme.typography.body2, lineHeight = 22.sp)
       Spacer(Modifier.fillMaxHeight().weight(1f))
@@ -397,10 +397,10 @@ fun IncomingCallLockScreenAlertLayout(
 }
 
 @Composable
-private fun SimpleXLogo() {
+private fun AppLogo() {
   Image(
-    painter = painterResource(if (isInDarkTheme()) R.drawable.logo_light else R.drawable.logo),
-    contentDescription = stringResource(MR.strings.image_descr_simplex_logo),
+    painter = painterResource(if (isInDarkTheme()) R.drawable.rx_logo_light else R.drawable.rx_logo),
+    contentDescription = stringResource(MR.strings.image_descr_rx_msg_logo),
     modifier = Modifier
       .padding(vertical = DEFAULT_PADDING)
       .fillMaxWidth(0.80f)

@@ -46,7 +46,7 @@
     <string name="network_smp_proxy_mode_always">Selalu</string>
     <string name="settings_section_title_app">Aplikasi</string>
     <string name="appearance_settings">Tampilan</string>
-    <string name="about_simplex_chat">Tentang SimpleX Chat</string>
+    <string name="about_simplex_chat">Tentang RX-msg</string>
     <string name="accept">Terima</string>
     <string name="accept_call_on_lock_screen">Terima</string>
     <string name="cancel_verb">Batalkan</string>
@@ -644,7 +644,7 @@
     <string name="enable_self_destruct">Aktifkan hapus otomatis</string>
     <string name="set_passcode">Pasang kode sandi</string>
     <string name="settings_section_title_help">Bantuan</string>
-    <string name="settings_section_title_support">Dukung SimpleX Chat</string>
+    <string name="settings_section_title_support">Dukung RX-msg</string>
     <string name="settings_section_title_calls">Panggilan</string>
     <string name="restart_the_app_to_create_a_new_chat_profile">Mulai ulang aplikasi untuk buat profil obrolan baru.</string>
     <string name="delete_messages">Hapus pesan</string>
@@ -694,7 +694,7 @@
     <string name="switching_profile_error_message">Koneksi Anda dipindahkan ke %s tetapi gagal saat mengarahkan Anda ke profil.</string>
     <string name="send_us_an_email">Kirim kami email</string>
     <string name="chat_with_the_founder">Kirim pertanyaan dan ide</string>
-    <string name="chat_lock">Kunci SimpleX</string>
+    <string name="chat_lock">Kunci RX-msg</string>
     <string name="markdown_help">Bantuan Markdown</string>
     <string name="media_and_file_servers">Server media &amp; berkas</string>
     <string name="smp_servers_your_server">Server Anda</string>
@@ -984,7 +984,7 @@
     <string name="callstatus_missed">panggilan tak terjawab</string>
     <string name="you_can_make_address_visible_via_settings">Anda dapat membuatnya terlihat oleh kontak SimpleX Anda melalui Pengaturan.</string>
     <string name="invite_friends_short">Undang</string>
-    <string name="email_invite_body">Hai!\nHubungi saya melalui SimpleX Chat: %s</string>
+    <string name="email_invite_body">Hai!\nHubungi saya melalui RX-msg: %s</string>
     <string name="confirm_password">Konfirmasi kata sandi</string>
     <string name="callstatus_error">panggilan gagal</string>
     <string name="callstate_waiting_for_answer">menunggu jawaban…</string>
@@ -1011,7 +1011,7 @@
     <string name="call_desktop_permission_denied_chrome">Klik tombol info di dekat kolom alamat untuk mengizinkan penggunaan mikrofon.</string>
     <string name="relay_server_protects_ip">Server relai melindungi alamat IP Anda, tetapi dapat mengamati durasi panggilan.</string>
     <string name="call_desktop_permission_denied_safari">Buka Pengaturan Safari / Situs Web / Mikrofon, lalu pilih Izinkan untuk localhost.</string>
-    <string name="open_simplex_chat_to_accept_call">Buka SimpleX Chat untuk terima panggilan</string>
+    <string name="open_simplex_chat_to_accept_call">Buka RX-msg untuk terima panggilan</string>
     <string name="open_verb">Buka</string>
     <string name="status_e2e_encrypted">terenkripsi e2e</string>
     <string name="call_connection_peer_to_peer">peer-to-peer</string>
@@ -1179,8 +1179,8 @@
     <string name="notification_preview_mode_message_desc">Tampilkan kontak dan pesan</string>
     <string name="notification_preview_somebody">Kontak tersembunyi:</string>
     <string name="la_notice_turn_on">Nyalakan</string>
-    <string name="la_lock_mode">Mode Kunci SimpleX</string>
-    <string name="auth_simplex_lock_turned_on">Kunci SimpleX diaktifkan</string>
+    <string name="la_lock_mode">Mode Kunci RX-msg</string>
+    <string name="auth_simplex_lock_turned_on">Kunci RX-msg diaktifkan</string>
     <string name="auth_you_will_be_required_to_authenticate_when_you_start_or_resume">Anda akan diminta untuk lakukan autentikasi saat mulai atau lanjutkan aplikasi setelah 30 detik di latar belakang.</string>
     <string name="app_passcode_replaced_with_self_destruct">Kode sandi aplikasi diganti dengan kode sandi hapus otomatis.</string>
     <string name="receipts_section_description_1">Mereka dapat ditimpa dalam pengaturan kontak dan grup.</string>
@@ -1197,10 +1197,10 @@
     <string name="error_deleting_pending_contact_connection">Gagal menghapus koneksi kontak tertunda</string>
     <string name="error_changing_address">Gagal mengubah alamat</string>
     <string name="error_aborting_address_change">Gagal batalkan perubahan alamat</string>
-    <string name="ntf_channel_messages">Pesan SimpleX Chat</string>
+    <string name="ntf_channel_messages">Pesan RX-msg</string>
     <string name="system_restricted_background_warn"><![CDATA[Untuk aktifkan notifikasi, pilih <b>Penggunaan baterai aplikasi</b> / <b>Tidak dibatasi</b> di pengaturan aplikasi.]]></string>
     <string name="system_restricted_background_in_call_desc">Aplikasi mungkin ditutup setelah 1 menit di latar belakang.</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Untuk melindungi informasi Anda, aktifkan Kunci SimpleX.\nAnda akan diminta untuk menyelesaikan autentikasi sebelum fitur ini aktif.</string>
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Untuk melindungi informasi Anda, aktifkan Kunci RX-msg.\nAnda akan diminta untuk menyelesaikan autentikasi sebelum fitur ini aktif.</string>
     <string name="la_minutes">%d menit</string>
     <string name="error_showing_desktop_notification">Gagal menampilkan notifikasi, hubungi pengembang.</string>
     <string name="receipts_groups_title_enable">Aktifkan tanda terima untuk grup?</string>
@@ -1224,7 +1224,7 @@
     <string name="service_notifications">Notifikasi instan!</string>
     <string name="service_notifications_disabled">Notifikasi instan dimatikan!</string>
     <string name="periodic_notifications">Notifikasi berkala</string>
-    <string name="system_restricted_background_desc">SimpleX tidak dapat berjalan di latar belakang. Anda hanya menerima notifikasi saat aplikasi berjalan.</string>
+    <string name="system_restricted_background_desc">RX-msg tidak dapat berjalan di latar belakang. Anda hanya menerima notifikasi saat aplikasi berjalan.</string>
     <string name="call_service_notification_video_call">Panggilan video</string>
     <string name="simplex_service_notification_text">Menerima pesan…</string>
     <string name="settings_notification_preview_mode_title">Lihat pratinjau</string>
@@ -1232,7 +1232,7 @@
     <string name="notifications_mode_service_desc">Layanan latar belakang selalu berjalan – notifikasi selalu menampilkan pesan yang tersedia.</string>
     <string name="notification_preview_mode_contact_desc">Tampilkan hanya kontak</string>
     <string name="notification_display_mode_hidden_desc">Sembunyikan kontak dan pesan</string>
-    <string name="la_notice_title_simplex_lock">Kunci SimpleX</string>
+    <string name="la_notice_title_simplex_lock">Kunci RX-msg</string>
     <string name="la_lock_mode_system">Autentikasi sistem</string>
     <string name="la_auth_failed">Autentikasi gagal</string>
     <string name="la_lock_mode_passcode">Entri kode sandi</string>
@@ -1244,7 +1244,7 @@
     <string name="smp_proxy_error_broker_host">Alamat server penerusan tidak kompatibel dengan pengaturan jaringan: %1$s.</string>
     <string name="smp_server_test_upload_file">Unggah berkas</string>
     <string name="possible_slow_function_desc">Eksekusi fungsi memakan waktu terlalu lama: %1$d detik: %2$s</string>
-    <string name="ntf_channel_calls">Panggilan SimpleX Chat</string>
+    <string name="ntf_channel_calls">Panggilan RX-msg</string>
     <string name="network_error_broker_host_desc">Alamat server tidak kompatibel dengan pengaturan jaringan: %1$s.</string>
     <string name="error_smp_test_failed_at_step">Uji gagal pada langkah %s.</string>
     <string name="la_seconds">%d detik</string>
@@ -1264,9 +1264,9 @@
     <string name="error_xftp_test_server_auth">Server perlu otorisasi untuk mengunggah, periksa kata sandi.</string>
     <string name="smp_server_test_create_queue">Buat antrian</string>
     <string name="it_can_disabled_via_settings_notifications_still_shown"><![CDATA[<b>Dapat dimatikan melalui pengaturan</b> – notifikasi akan tetap ditampilkan saat aplikasi berjalan.]]></string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Untuk tingkatkan privasi, <b>SimpleX berjalan di latar belakang</b> alih-alih gunakan notifikasi push.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Untuk tingkatkan privasi, <b>RX-msg berjalan di latar belakang</b> alih-alih gunakan notifikasi push.]]></string>
     <string name="periodic_notifications_desc">Aplikasi terima pesan baru secara berkala — aplikasi ini memakai beberapa persen baterai per hari. Aplikasi ini tidak gunakan notifikasi push — data dari perangkat tidak dikirim ke server.</string>
-    <string name="simplex_service_notification_title">Layanan SimpleX Chat</string>
+    <string name="simplex_service_notification_title">Layanan RX-msg</string>
     <string name="notification_preview_mode_contact">Nama kontak</string>
     <string name="la_enter_app_passcode">Masukkan Kode Sandi</string>
     <string name="la_current_app_passcode">Kode Sandi Saat Ini</string>
@@ -1528,11 +1528,11 @@
     <string name="connecting_to_desktop">Menghubungkan ke desktop</string>
     <string name="desktop_app_version_is_incompatible">Versi aplikasi desktop %s tidak kompatibel dengan aplikasi ini.</string>
     <string name="remote_host_error_bad_state"><![CDATA[Koneksi ponsel <b>%s</b> dalam kondisi buruk]]></string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Autentikasi perangkat tidak diaktifkan. Anda dapat aktifkan SimpleX Lock via Pengaturan, setelah mengaktifkan autentikasi perangkat.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Autentikasi perangkat tidak diaktifkan. Anda dapat aktifkan RX-msg Lock via Pengaturan, setelah mengaktifkan autentikasi perangkat.</string>
     <string name="auth_unavailable">Autentikasi tidak tersedia</string>
     <string name="auth_confirm_credential">Konfirmasi kredensial Anda</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">Autentikasi perangkat mati. Matikan SimpleX Lock.</string>
-    <string name="auth_disable_simplex_lock">Matikan Kunci SimpleX</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">Autentikasi perangkat mati. Matikan RX-msg Lock.</string>
+    <string name="auth_disable_simplex_lock">Matikan Kunci RX-msg</string>
     <string name="snd_error_relay">Kesalahan server tujuan: %1$s</string>
     <string name="delete_and_notify_contact">Hapus dan beritahu kontak</string>
     <string name="button_delete_contact">Hapus kontak</string>
@@ -1655,7 +1655,7 @@
     <string name="hide_dev_options">Sembunyikan:</string>
     <string name="for_social_media">Untuk media sosial</string>
     <string name="settings_experimental_features">Fitur eksperimental</string>
-    <string name="auth_enable_simplex_lock">Aktifkan Kunci SimpleX</string>
+    <string name="auth_enable_simplex_lock">Aktifkan Kunci RX-msg</string>
     <string name="file_error_no_file">Berkas tidak ditemukan - kemungkinan besar telah dihapus atau dibatalkan.</string>
     <string name="file_error_relay">Kesalahan berkas server: %1$s</string>
     <string name="in_reply_to">Balasan untuk</string>
@@ -1948,7 +1948,7 @@
     <string name="agent_critical_error_desc">Harap laporkan ke pengembang:\n%s\n\nDisarankan untuk memulai ulang aplikasi.</string>
     <string name="custom_time_unit_minutes">menit</string>
     <string name="network_session_mode_session_description">Kredensial SOCKS baru akan digunakan setiap kali Anda memulai aplikasi.</string>
-    <string name="email_invite_subject">Mari bicara di SimpleX Chat</string>
+    <string name="email_invite_subject">Mari bicara di RX-msg</string>
     <string name="save_and_notify_contact">Simpan dan beritahu kontak</string>
     <string name="save_preferences_question">Simpan preferensi?</string>
     <string name="you_can_create_it_later">Anda dapat buat nanti</string>
@@ -2147,7 +2147,7 @@
     <string name="you_need_to_allow_to_send_voice">Anda perlu mengizinkan kontak mengirim pesan suara agar dapat mengirimkannya.</string>
     <string name="to_share_with_your_contact">(untuk dibagikan dengan kontak Anda)</string>
     <string name="tap_to_scan">Ketuk untuk pindai</string>
-    <string name="thank_you_for_installing_simplex">Terima kasih telah memasang SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">Terima kasih telah memasang RX-msg!</string>
     <string name="set_contact_name">Setel nama kontak</string>
     <string name="alert_text_connection_pending_they_need_to_be_online_can_delete_and_retry">Kontak Anda harus online agar koneksi dapat selesai.\nAnda dapat batalkan koneksi ini dan hapus kontak (dan coba lagi nanti dengan tautan baru).</string>
     <string name="image_descr_simplex_logo">Logo SimpleX</string>
@@ -2184,8 +2184,8 @@
     <string name="size">Ukuran</string>
     <string name="uploaded_files">Berkas diunggah</string>
     <string name="connection_error_quota_desc">Koneksi mencapai batas pesan yang tidak terkirim, kontak Anda mungkin sedang offline.</string>
-    <string name="lock_not_enabled">Kunci SimpleX tidak diaktifkan!</string>
-    <string name="you_can_turn_on_lock">Anda dapat aktifkan Kunci SimpleX di Pengaturan.</string>
+    <string name="lock_not_enabled">Kunci RX-msg tidak diaktifkan!</string>
+    <string name="you_can_turn_on_lock">Anda dapat aktifkan Kunci RX-msg di Pengaturan.</string>
     <string name="contact_you_shared_link_with_wont_be_able_to_connect">Kontak yang Anda bagikan tautan ini TIDAK akan dapat terhubung!</string>
     <string name="image_decoding_exception_desc">Gambar tidak dapat didekodekan. Silakan coba gambar lain atau hubungi pengembang.</string>
     <string name="snd_error_auth">Kunci salah atau koneksi tidak dikenal - kemungkinan besar koneksi ini dihapus.</string>

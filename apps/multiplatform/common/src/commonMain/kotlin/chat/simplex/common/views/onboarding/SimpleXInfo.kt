@@ -72,8 +72,9 @@ private fun SimpleXInfoDesktop(chatModel: ChatModel) {
       ColumnWithScrollBar(Modifier.padding(horizontal = DEFAULT_PADDING), horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(Modifier.height(DEFAULT_PADDING))
         Box(Modifier.widthIn(max = 600.dp).fillMaxWidth(0.45f).align(Alignment.CenterHorizontally)) {
-          SimpleXLogo()
+          AppLogo()
         }
+        RXAttribution()
         Spacer(Modifier.fillMaxHeight().weight(1f))
         Column(Modifier.widthIn(max = 600.dp).align(Alignment.CenterHorizontally), horizontalAlignment = Alignment.CenterHorizontally) {
           Box(Modifier.align(Alignment.CenterHorizontally)) {
@@ -109,8 +110,9 @@ fun SimpleXInfoLayout(
   val modifier = Modifier.fillMaxSize().systemBarsPadding().padding(horizontal = DEFAULT_ONBOARDING_HORIZONTAL_PADDING)
   Column(if (topBar) modifier.padding(top = AppBarHeight * fontSizeSqrtMultiplier) else modifier, horizontalAlignment = Alignment.CenterHorizontally) {
     Box(Modifier.padding(top = DEFAULT_PADDING * 2).widthIn(max = if (appPlatform.isAndroid) 185.dp else 160.dp), contentAlignment = Alignment.Center) {
-      SimpleXLogo()
+      AppLogo()
     }
+    RXAttribution()
     OnboardingShrinkingLayout(
       modifier = Modifier.fillMaxSize(),
       image = {
@@ -172,14 +174,24 @@ fun SimpleXInfoLayout(
 }
 
 @Composable
-fun SimpleXLogo() {
+fun AppLogo() {
   Image(
-    painter = painterResource(if (isInDarkTheme()) MR.images.logo_light else MR.images.logo),
-    contentDescription = stringResource(MR.strings.image_descr_simplex_logo),
+    painter = painterResource(if (isInDarkTheme()) MR.images.rx_logo_light else MR.images.rx_logo),
+    contentDescription = stringResource(MR.strings.image_descr_rx_msg_logo),
     contentScale = ContentScale.FillWidth,
     modifier = Modifier
       .padding(bottom = 10.dp)
       .fillMaxWidth()
+  )
+}
+
+@Composable
+private fun RXAttribution() {
+  Text(
+    stringResource(MR.strings.rx_msg_based_on_simplex),
+    style = MaterialTheme.typography.body2,
+    color = MaterialTheme.colors.secondary,
+    textAlign = TextAlign.Center,
   )
 }
 

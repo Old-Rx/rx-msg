@@ -305,7 +305,7 @@
     <string name="choose_file_title">Izvēlēties faila nosaukumu</string>
     <string name="gallery_image_button">Galerijas attēla poga</string>
     <string name="gallery_video_button">Galerijas video poga</string>
-    <string name="thank_you_for_installing_simplex">Paldies, ka instalējāt SimpleX</string>
+    <string name="thank_you_for_installing_simplex">Paldies, ka instalējāt RX-msg</string>
     <string name="you_can_connect_to_simplex_chat_founder"><![CDATA[Jūs varat sazināties ar SimpleX čata dibinātāju]]></string>
     <string name="to_start_a_new_chat_help_header">Lai sāktu jaunu čatu, palīdzības virsraksts</string>
     <string name="chat_help_tap_button">Čata palīdzības pieskāriena poga</string>
@@ -341,8 +341,8 @@
     <string name="your_chat_profiles">Tavi čata profili</string>
     <string name="create_chat_profile">Izveidot čata profilu</string>
     <string name="database_passphrase_and_export">Datubāzes parole un eksportēšana</string>
-    <string name="about_simplex_chat">Par SimpleX Chat</string>
-    <string name="how_to_use_simplex_chat">Kā lietot SimpleX Chat</string>
+    <string name="about_simplex_chat">Par RX-msg</string>
+    <string name="how_to_use_simplex_chat">Kā lietot RX-msg</string>
     <string name="markdown_help">Markdown palīdzība</string>
     <string name="markdown_in_messages">Markdown ziņās</string>
     <string name="chat_with_the_founder">Čats ar dibinātāju</string>
@@ -454,7 +454,7 @@
     <string name="webrtc_ice_servers">Webrtc Ice Serveri</string>
     <string name="relay_server_protects_ip">Relay Serveris Aizsargā Ip</string>
     <string name="relay_server_if_necessary">Relay Serveris Ja Nepieciešams</string>
-    <string name="open_simplex_chat_to_accept_call">Atveriet SimpleX Chat, lai pieņemtu zvanu</string>
+    <string name="open_simplex_chat_to_accept_call">Atveriet RX-msg, lai pieņemtu zvanu</string>
     <string name="allow_accepting_calls_from_lock_screen">Atļaut zvanu pieņemšanu no bloķēšanas ekrāna</string>
     <string name="open_verb">Atvērt</string>
     <string name="status_e2e_encrypted">Statuss E2E Šifrēts</string>
@@ -941,7 +941,7 @@
     <string name="icon_descr_instant_notifications">Tūlītējas paziņojumi</string>
     <string name="service_notifications">Pakalpojumu paziņojumi</string>
     <string name="service_notifications_disabled">Pakalpojumu paziņojumi atslēgti</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Lai saglabātu privātumu, Simplex izmanto fona pakalpojumu, nevis uznirstošos paziņojumus, tas patērē mazāk datora akumulatora.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Lai saglabātu privātumu, RX-msg izmanto fona pakalpojumu, nevis uznirstošos paziņojumus, tas patērē mazāk datora akumulatora.]]></string>
     <string name="it_can_disabled_via_settings_notifications_still_shown"><![CDATA[To var atslēgt caur iestatījumiem, paziņojumi joprojām tiek rādīti.]]></string>
     <string name="turn_off_battery_optimization"><![CDATA[Izslēgt akumulatora optimizāciju]]></string>
     <string name="turning_off_service_and_periodic">Izslēdzot pakalpojumu un periodiskos paziņojumus</string>
@@ -961,7 +961,7 @@
     <string name="database_initialization_error_title">Datu bāzes inicializācijas kļūda</string>
     <string name="database_initialization_error_desc">Neizdevās inicializēt datu bāzi.</string>
     <string name="xiaomi_ignore_battery_optimization"><![CDATA[Xiaomi ignorēt akumulatora optimizāciju]]></string>
-    <string name="simplex_service_notification_title">Simplex pakalpojumu paziņojums</string>
+    <string name="simplex_service_notification_title">RX-msg pakalpojumu paziņojums</string>
     <string name="simplex_service_notification_text">Simplex pakalpojumu paziņojuma teksts</string>
     <string name="call_service_notification_audio_call">Zvana pakalpojumu paziņojums audio zvanam</string>
     <string name="call_service_notification_video_call">Zvana pakalpojumu paziņojums video zvanam</string>
@@ -989,8 +989,8 @@
     <string name="notification_new_contact_request">Jauns kontaktu pieprasījums</string>
     <string name="notification_contact_connected">Kontakts savienots</string>
     <string name="error_showing_desktop_notification">Kļūda, rādot darbvirsmas paziņojumu</string>
-    <string name="la_notice_title_simplex_lock">SimpleX Bloķēšana</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Lai aizsargātu jūsu informāciju, ieslēdziet SimpleX bloķēšanu; jums tiks lūgts pabeigt autentifikāciju, pirms šī funkcija tiks aktivizēta.</string>
+    <string name="la_notice_title_simplex_lock">RX-msg Bloķēšana</string>
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Lai aizsargātu jūsu informāciju, ieslēdziet RX-msg bloķēšanu; jums tiks lūgts pabeigt autentifikāciju, pirms šī funkcija tiks aktivizēta.</string>
     <string name="la_notice_turn_on">Ieslēgt</string>
     <string name="la_lock_mode">Bloķēšanas režīms</string>
     <string name="la_lock_mode_system">Izmantot ierīces bloķēšanu</string>
@@ -1006,12 +1006,12 @@
     <string name="la_seconds">sekundes</string>
     <string name="la_minutes">minūtes</string>
     <string name="la_please_remember_to_store_password">Lūdzu, atcerieties saglabāt paroli</string>
-    <string name="auth_simplex_lock_turned_on">SimpleX bloķēšana ieslēgta</string>
+    <string name="auth_simplex_lock_turned_on">RX-msg bloķēšana ieslēgta</string>
     <string name="auth_you_will_be_required_to_authenticate_when_you_start_or_resume">Jums būs jāveic autentifikācija, kad sākat vai atsākat</string>
     <string name="auth_unlock">Atbloķēt</string>
     <string name="auth_log_in_using_credential">Pieslēgties, izmantojot akreditācijas datus</string>
-    <string name="auth_enable_simplex_lock">Ieslēgt SimpleX Bloķēšanu</string>
-    <string name="auth_disable_simplex_lock">Izslēgt SimpleX Bloķēšanu</string>
+    <string name="auth_enable_simplex_lock">Ieslēgt RX-msg Bloķēšanu</string>
+    <string name="auth_disable_simplex_lock">Izslēgt RX-msg Bloķēšanu</string>
     <string name="auth_confirm_credential">Apstiprināt akreditācijas datus</string>
     <string name="auth_unavailable">Autentifikācija nav pieejama</string>
     <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">Ierīces autentifikācija nav iespējota; to varat ieslēgt iestatījumos, kad tā būs iespējota.</string>

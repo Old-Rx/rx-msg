@@ -9,7 +9,7 @@
     <string name="images_limit_desc">Possono essere inviate solo 10 immagini alla volta</string>
     <string name="image_will_be_received_when_contact_is_online">L\'immagine verrà ricevuta quando il tuo contatto sarà in linea, aspetta o controlla più tardi!</string>
     <string name="waiting_for_image">In attesa dell\'immagine</string>
-    <string name="app_name">SimpleX</string>
+    <string name="app_name">RX-msg</string>
     <string name="thousand_abbreviation">k</string>
     <string name="connect_via_invitation_link">Connettere via link una tantum?</string>
     <string name="connect_via_group_link">Entrare nel gruppo?</string>
@@ -92,8 +92,8 @@
     <string name="database_initialization_error_desc">Il database non funziona bene. Tocca per maggiori informazioni</string>
     <string name="simplex_service_notification_text">Ricezione messaggi…</string>
     <string name="hide_notification">Nascondi</string>
-    <string name="ntf_channel_messages">Messaggi di SimpleX Chat</string>
-    <string name="ntf_channel_calls">Chiamate di SimpleX Chat</string>
+    <string name="ntf_channel_messages">Messaggi di RX-msg</string>
+    <string name="ntf_channel_calls">Chiamate di RX-msg</string>
     <string name="settings_notifications_mode_title">Servizio di notifica</string>
     <string name="settings_notification_preview_mode_title">Mostra anteprima</string>
     <string name="settings_notification_preview_title">Anteprima notifica</string>
@@ -115,11 +115,11 @@
     <string name="la_notice_turn_on">Attiva</string>
     <string name="auth_unlock">Sblocca</string>
     <string name="auth_log_in_using_credential">Accedi usando le tue credenziali</string>
-    <string name="auth_enable_simplex_lock">Attiva SimpleX Lock</string>
-    <string name="auth_disable_simplex_lock">Disattiva SimpleX Lock</string>
+    <string name="auth_enable_simplex_lock">Attiva RX-msg Lock</string>
+    <string name="auth_disable_simplex_lock">Disattiva RX-msg Lock</string>
     <string name="auth_confirm_credential">Conferma le tue credenziali</string>
     <string name="auth_unavailable">Autenticazione non disponibile</string>
-    <string name="auth_device_authentication_is_disabled_turning_off">L\'autenticazione del dispositivo è disattivata. Disattivazione di SimpleX Lock.</string>
+    <string name="auth_device_authentication_is_disabled_turning_off">L\'autenticazione del dispositivo è disattivata. Disattivazione di RX-msg Lock.</string>
     <string name="auth_stop_chat">Ferma la chat</string>
     <string name="auth_open_chat_console">Apri la console della chat</string>
     <string name="message_delivery_error_title">Errore di recapito del messaggio</string>
@@ -210,16 +210,16 @@
     <string name="you_are_already_connected_to_vName_via_this_link">Sei già connesso a %1$s.</string>
     <string name="connection_error_auth_desc">Il tuo contatto ha rimosso questo link, o era un link una tantum che è già stato usato.\nPer connetterti, chiedi al tuo contatto di creare un nuovo link.</string>
     <string name="error_smp_test_certificate">L\'impronta digitale nell\'indirizzo del server non corrisponde al certificato.</string>
-    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Per migliorare la privacy, <b>SimpleX funziona in secondo piano</b> invece di usare le notifiche push.]]></string>
+    <string name="to_preserve_privacy_simplex_has_background_service_instead_of_push_notifications_it_uses_a_few_pc_battery"><![CDATA[Per migliorare la privacy, <b>RX-msg funziona in secondo piano</b> invece di usare le notifiche push.]]></string>
     <string name="turn_off_battery_optimization"><![CDATA[<b>Consentilo</b> nella prossima schermata per ricevere le notifiche immediatamente.]]></string>
-    <string name="simplex_service_notification_title">Servizio SimpleX Chat</string>
+    <string name="simplex_service_notification_title">Servizio RX-msg</string>
     <string name="notifications_mode_service_desc">Servizio in secondo piano sempre attivo. Le notifiche verranno mostrate appena i messaggi saranno disponibili.</string>
-    <string name="la_notice_title_simplex_lock">SimpleX Lock</string>
-    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Per proteggere le tue informazioni, attiva SimpleX Lock.
+    <string name="la_notice_title_simplex_lock">RX-msg Lock</string>
+    <string name="la_notice_to_protect_your_information_turn_on_simplex_lock_you_will_be_prompted_to_complete_authentication_before_this_feature_is_enabled">Per proteggere le tue informazioni, attiva RX-msg Lock.
 \nTi verrà chiesto di completare l\'autenticazione prima di attivare questa funzionalità.</string>
-    <string name="auth_simplex_lock_turned_on">SimpleX Lock attivo</string>
+    <string name="auth_simplex_lock_turned_on">RX-msg Lock attivo</string>
     <string name="auth_you_will_be_required_to_authenticate_when_you_start_or_resume">Dovrai autenticarti quando avvii o riapri l\'app dopo 30 secondi in secondo piano.</string>
-    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">L\'autenticazione del dispositivo non è attiva. Potrai attivare SimpleX Lock nelle impostazioni, quando avrai attivato l\'autenticazione del dispositivo.</string>
+    <string name="auth_device_authentication_is_not_enabled_you_can_turn_on_in_settings_once_enabled">L\'autenticazione del dispositivo non è attiva. Potrai attivare RX-msg Lock nelle impostazioni, quando avrai attivato l\'autenticazione del dispositivo.</string>
     <string name="delete_message_mark_deleted_warning">Il messaggio verrà contrassegnato per l\'eliminazione. I destinatari potranno rivelare questo messaggio.</string>
     <string name="share_message">Condividi messaggio…</string>
     <string name="contact_sent_large_file">Il tuo contatto ha inviato un file più grande della dimensione massima supportata (%1$s).</string>
@@ -229,7 +229,7 @@
     <string name="send_live_message_desc">Invia un messaggio in diretta: si aggiornerà per i destinatari mentre lo digiti</string>
     <string name="chat_item_ttl_day">1 giorno</string>
     <string name="a_plus_b">a + b</string>
-    <string name="about_simplex_chat">Riguardo SimpleX Chat</string>
+    <string name="about_simplex_chat">Riguardo RX-msg</string>
     <string name="group_member_role_admin">amministratore</string>
     <string name="chat_item_ttl_week">1 settimana</string>
     <string name="smp_servers_add_to_another_device">Aggiungi ad un altro dispositivo</string>
@@ -526,7 +526,7 @@
     <string name="scan_QR_code">Scansiona un codice QR</string>
     <string name="add_contact_or_create_group">Inizia una nuova conversazione</string>
     <string name="chat_help_tap_button">Tocca il pulsante</string>
-    <string name="thank_you_for_installing_simplex">Grazie per aver installato SimpleX Chat!</string>
+    <string name="thank_you_for_installing_simplex">Grazie per aver installato RX-msg!</string>
     <string name="to_connect_via_link_title">Per connettersi via link</string>
     <string name="to_share_with_your_contact">(da condividere con il tuo contatto)</string>
     <string name="to_start_a_new_chat_help_header">Per iniziare una nuova chat</string>
@@ -580,7 +580,7 @@
     <string name="send_us_an_email">Inviaci un\'email</string>
     <string name="smp_servers_test_failed">Test del server fallito!</string>
     <string name="share_invitation_link">Condividi link una tantum</string>
-    <string name="chat_lock">SimpleX Lock</string>
+    <string name="chat_lock">RX-msg Lock</string>
     <string name="is_not_verified">%s non è verificato/a</string>
     <string name="is_verified">%s è verificato/a</string>
     <string name="smp_servers">Server SMP</string>
@@ -673,7 +673,7 @@
     <string name="icon_descr_call_missed">Chiamata persa</string>
     <string name="status_no_e2e_encryption">nessuna crittografia e2e</string>
     <string name="open_verb">Apri</string>
-    <string name="open_simplex_chat_to_accept_call">Apri SimpleX Chat per accettare la chiamata</string>
+    <string name="open_simplex_chat_to_accept_call">Apri RX-msg per accettare la chiamata</string>
     <string name="call_connection_peer_to_peer">peer-to-peer</string>
     <string name="icon_descr_call_pending_sent">Chiamata in sospeso</string>
     <string name="privacy_and_security">Privacy e sicurezza</string>
@@ -709,7 +709,7 @@
     <string name="stop_chat_confirmation">Ferma</string>
     <string name="stop_chat_question">Fermare la chat\?</string>
     <string name="stop_chat_to_export_import_or_delete_chat_database">Ferma la chat per esportare, importare o eliminare il database della chat. Non potrai ricevere e inviare messaggi mentre la chat è ferma.</string>
-    <string name="settings_section_title_support">Supporta SimpleX Chat</string>
+    <string name="settings_section_title_support">Supporta RX-msg</string>
     <string name="settings_section_title_themes">Temi</string>
     <string name="delete_chat_profile_action_cannot_be_undone_warning">Questa azione non può essere annullata: il tuo profilo, i contatti, i messaggi e i file andranno persi in modo irreversibile.</string>
     <string name="settings_section_title_you">Tu</string>
@@ -1031,7 +1031,7 @@
     <string name="ensure_xftp_server_address_are_correct_format_and_unique">Assicurati che gli indirizzi del server XFTP siano nel formato corretto, uno per riga e non doppi.</string>
     <string name="la_auth_failed">Autenticazione fallita</string>
     <string name="la_lock_mode_passcode">Inserimento del codice di accesso</string>
-    <string name="la_lock_mode">Modalità di SimpleX Lock</string>
+    <string name="la_lock_mode">Modalità di RX-msg Lock</string>
     <string name="la_lock_mode_system">Autenticazione di sistema</string>
     <string name="la_authenticate">Autentica</string>
     <string name="la_change_app_passcode">Cambia codice di accesso</string>
@@ -1042,8 +1042,8 @@
     <string name="la_immediately">Immediatamente</string>
     <string name="la_no_app_password">Nessun codice di accesso dell\'app</string>
     <string name="la_please_remember_to_store_password">Ricordala o conservala in modo sicuro: non c\'è modo di recuperare una password persa!</string>
-    <string name="lock_not_enabled">SimpleX Lock non attivato!</string>
-    <string name="you_can_turn_on_lock">Puoi attivare SimpleX Lock tramite le impostazioni.</string>
+    <string name="lock_not_enabled">RX-msg Lock non attivato!</string>
+    <string name="you_can_turn_on_lock">Puoi attivare RX-msg Lock tramite le impostazioni.</string>
     <string name="la_could_not_be_verified">Non è stato possibile verificarti, riprova.</string>
     <string name="confirm_passcode">Conferma il codice di accesso</string>
     <string name="la_mode_passcode">Codice di accesso</string>
@@ -1111,7 +1111,7 @@
     <string name="stop_sharing">Smetti di condividere</string>
     <string name="enter_welcome_message_optional">Inserisci il messaggio di benvenuto… (facoltativo)</string>
     <string name="email_invite_body">Ciao!
-\nConnettiti a me tramite SimpleX Chat: %s</string>
+\nConnettiti a me tramite RX-msg: %s</string>
     <string name="invite_friends">Invita amici</string>
     <string name="save_auto_accept_settings">Salva le impostazioni dell\'indirizzo SimpleX</string>
     <string name="you_can_create_it_later">Puoi crearlo più tardi</string>
@@ -1141,7 +1141,7 @@
     <string name="customize_theme_title">Personalizza il tema</string>
     <string name="dark_theme">Tema scuro</string>
     <string name="if_you_cant_meet_in_person">Se non potete incontrarvi di persona, mostra il codice QR in una videochiamata o condividi il link.</string>
-    <string name="email_invite_subject">Parliamo in SimpleX Chat</string>
+    <string name="email_invite_subject">Parliamo in RX-msg</string>
     <string name="profile_update_will_be_sent_to_contacts">L\'aggiornamento del profilo verrà inviato ai tuoi contatti di SimpleX.</string>
     <string name="read_more_in_user_guide_with_link"><![CDATA[Maggiori informazioni nella <font color="#0088ff">Guida per l\'utente</font>.]]></string>
     <string name="color_surface">Menu e avvisi</string>
@@ -1340,7 +1340,7 @@
     <string name="connect__a_new_random_profile_will_be_shared">Verrà condiviso un nuovo profilo casuale.</string>
     <string name="disable_notifications_button">Disattiva le notifiche</string>
     <string name="system_restricted_background_in_call_title">Nessuna chiamata in secondo piano</string>
-    <string name="system_restricted_background_desc">SimpleX non può funzionare in secondo piano. Riceverai le notifiche solo quando l\'app è aperta.</string>
+    <string name="system_restricted_background_desc">RX-msg non può funzionare in secondo piano. Riceverai le notifiche solo quando l\'app è aperta.</string>
     <string name="system_restricted_background_warn"><![CDATA[Per attivare le notifiche, scegli <b>Utilizzo batteria dell\'app</b> / <b>Senza restrizioni</b> nelle impostazioni.]]></string>
     <string name="system_restricted_background_in_call_warn"><![CDATA[Per effettuare chiamate in secondo piano, scegli <b>Utilizzo batteria dell\'app</b> / <b>Senza restrizioni</b> nelle impostazioni.]]></string>
     <string name="rcv_group_event_2_members_connected">%s e %s si sono connessi/e</string>
@@ -2824,10 +2824,10 @@
     <string name="close_behavior_dialog_minimize">Riduci nell\'area delle notifiche</string>
     <string name="close_behavior_dialog_title">Ridurre nell\'area delle notifiche?</string>
     <string name="appearance_minimize_to_tray">Chiudi nell\'area delle notifiche</string>
-    <string name="tray_quit">Esci da SimpleX</string>
-    <string name="tray_show">Mostra SimpleX</string>
-    <string name="tray_tooltip">SimpleX</string>
-    <string name="tray_tooltip_unread">SimpleX — %d non letto/i</string>
+    <string name="tray_quit">Esci da RX-msg</string>
+    <string name="tray_show">Mostra RX-msg</string>
+    <string name="tray_tooltip">RX-msg</string>
+    <string name="tray_tooltip_unread">RX-msg — %d non letto/i</string>
     <string name="another_instance_not_responding">Un\'altra istanza dell\'app potrebbe essere in esecuzione o non si è chiusa correttamente. Avviare comunque?</string>
     <string name="another_instance_title">L\'app è già in esecuzione</string>
     <string name="relay_status_rejected">rifiutato</string>
