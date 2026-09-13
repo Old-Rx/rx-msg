@@ -167,8 +167,7 @@ jobs:
           printf '%s\n' "$verification_output"
           expected_cert_sha256="0c9e5dcabaabe47a7bdec4e90e0ea5877c2f8420f396d376ca5179ee9334df15"
           actual_cert_sha256=$(
-            sed -n 's/^Signer #1 certificate SHA-256 digest: //p' <<< "$verification_output" |
-              head -n 1 |
+            awk 'tolower($0) ~ /certificate sha-256 digest:/ {print $NF; exit}' <<< "$verification_output" |
               tr -d ':\r' |
               tr '[:upper:]' '[:lower:]'
           )
