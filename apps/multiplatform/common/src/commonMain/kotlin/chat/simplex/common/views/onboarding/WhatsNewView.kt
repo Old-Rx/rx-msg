@@ -942,15 +942,8 @@ private val versionDescriptions: List<VersionDescription> = listOf(
     )
   ),
   VersionDescription(
-    // the trailing space differs from the previously released "v7.0", so that What's new is shown again
     version = if (isInUs()) "v7.0.1" else "v7.0",
-    post = "https://simplex.chat/blog/20260819-simplex-chat-crowdfunding.html",
     features = listOf(
-      VersionFeature.FeatureView(
-        icon = null,
-        titleId = MR.strings.v7_0_invest,
-        view = { modalManager -> InvestInSimpleXChatView(modalManager) }
-      ),
       VersionFeature.FeatureDescription(
         icon = MR.images.ic_alternate_email,
         titleId = MR.strings.v7_0_simplex_names,
