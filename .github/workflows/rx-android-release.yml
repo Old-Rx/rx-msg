@@ -2,6 +2,12 @@ name: RX Android Release Candidate
 
 on:
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Optional draft prerelease tag, for example v7.0.1-rx.1"
+        required: false
+        default: ""
+        type: string
   push:
     branches:
       - main
@@ -9,7 +15,7 @@ on:
       - ".github/workflows/rx-android-release.yml"
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: rx-android-release-${{ github.ref }}
@@ -95,8 +101,7 @@ jobs:
 
           grep -n 'include("arm64-v8a")' android/build.gradle.kts
 
-      - name: Configure optional release signing
-        id: signing
+      - name: Configure required release signing
         shell: bash
         env:
           RX_ANDROID_KEYSTORE_BASE64: ${{ secrets.RX_ANDROID_KEYSTORE_BASE64 }}
@@ -109,26 +114,17 @@ jobs:
             "$ORG_GRADLE_PROJECT_rxSigningKeyAlias"
             "$ORG_GRADLE_PROJECT_rxSigningKeyPassword"
           )
-          configured=0
           for value in "${values[@]}"; do
-            if [[ -n "$value" ]]; then
-              configured=$((configured + 1))
+            if [[ -z "$value" ]]; then
+              echo "All four RX_ANDROID_* signing secrets are required for release builds." >&2
+              exit 1
             fi
           done
 
-          if [[ "$configured" -eq 0 ]]; then
-            echo "label=unsigned" >> "$GITHUB_OUTPUT"
-            echo "No signing secrets configured; producing an unsigned release candidate."
-          elif [[ "$configured" -ne 4 ]]; then
-            echo "All four RX_ANDROID_* signing secrets must be configured together." >&2
-            exit 1
-          else
-            KEYSTORE_PATH="$RUNNER_TEMP/rx-msg-release.jks"
-            printf '%s' "$RX_ANDROID_KEYSTORE_BASE64" | base64 --decode > "$KEYSTORE_PATH"
-            chmod 600 "$KEYSTORE_PATH"
-            echo "ORG_GRADLE_PROJECT_rxSigningStoreFile=$KEYSTORE_PATH" >> "$GITHUB_ENV"
-            echo "label=signed" >> "$GITHUB_OUTPUT"
-          fi
+          KEYSTORE_PATH="$RUNNER_TEMP/rx-msg-release.jks"
+          printf '%s' "$RX_ANDROID_KEYSTORE_BASE64" | base64 --decode > "$KEYSTORE_PATH"
+          chmod 600 "$KEYSTORE_PATH"
+          echo "ORG_GRADLE_PROJECT_rxSigningStoreFile=$KEYSTORE_PATH" >> "$GITHUB_ENV"
 
       - name: Build release APK
         working-directory: apps/multiplatform
@@ -140,8 +136,6 @@ jobs:
       - name: Verify and stage release candidate
         id: artifact
         shell: bash
-        env:
-          SIGNING_LABEL: ${{ steps.signing.outputs.label }}
         run: |
           set -euo pipefail
 
@@ -154,27 +148,43 @@ jobs:
           fi
 
           version_name=$(sed -n 's/^android.version_name=//p' apps/multiplatform/gradle.properties | tr -d '\r')
+          version_code=$(sed -n 's/^android.version_code=//p' apps/multiplatform/gradle.properties | tr -d '\r')
           mkdir -p dist
-          output="dist/rx-msg-${version_name}-arm64-${SIGNING_LABEL}.apk"
+          output="dist/rx-msg-${version_name}-arm64-signed.apk"
           cp "${release_apks[0]}" "$output"
 
           apksigner_path=$(find "$ANDROID_HOME/build-tools" -type f -name apksigner | sort -V | tail -n 1)
-          if [[ -z "$apksigner_path" ]]; then
-            echo "Android apksigner was not found." >&2
+          aapt_path=$(find "$ANDROID_HOME/build-tools" -type f -name aapt | sort -V | tail -n 1)
+          if [[ -z "$apksigner_path" || -z "$aapt_path" ]]; then
+            echo "Android APK inspection tools were not found." >&2
             exit 1
           fi
 
-          if [[ "$SIGNING_LABEL" == "signed" ]]; then
-            "$apksigner_path" verify --verbose --print-certs "$output"
-          elif "$apksigner_path" verify "$output" >/dev/null 2>&1; then
-            echo "Expected an unsigned APK, but signature verification succeeded." >&2
+          verification_output=$("$apksigner_path" verify --verbose --print-certs "$output")
+          printf '%s\n' "$verification_output"
+          expected_cert_sha256="0c9e5dcabaabe47a7bdec4e90e0ea5877c2f8420f396d376ca5179ee9334df15"
+          grep -F "Signer #1 certificate SHA-256 digest: $expected_cert_sha256" <<< "$verification_output"
+
+          badging=$("$aapt_path" dump badging "$output")
+          grep -F "package: name='com.oldrx.rxmsg'" <<< "$badging"
+          grep -F "versionCode='$version_code'" <<< "$badging"
+          grep -F "versionName='$version_name'" <<< "$badging"
+          grep -F "application-label:'RX-msg'" <<< "$badging"
+
+          mapfile -t native_abis < <(
+            unzip -Z1 "$output" |
+              awk -F/ '/^lib\/[^/]+\/[^/]+\.so$/ {print $2}' |
+              sort -u
+          )
+          if [[ "${native_abis[*]}" != "arm64-v8a" ]]; then
+            printf 'Expected only arm64-v8a native libraries, found: %s\n' "${native_abis[*]}" >&2
             exit 1
-          else
-            echo "Confirmed that this release candidate is unsigned."
           fi
+          unzip -Z1 "$output" | grep -Fx 'lib/arm64-v8a/libsimplex.so'
+          unzip -Z1 "$output" | grep -Fx 'lib/arm64-v8a/libsupport.so'
 
           sha256sum "$output" > dist/SHA256SUMS
-          echo "name=rx-msg-android-arm64-release-${SIGNING_LABEL}" >> "$GITHUB_OUTPUT"
+          echo "name=rx-msg-android-arm64-release-signed" >> "$GITHUB_OUTPUT"
           cat dist/SHA256SUMS
 
       - name: Remove temporary signing material
@@ -189,3 +199,43 @@ jobs:
           path: dist/
           if-no-files-found: error
           retention-days: 30
+
+      - name: Create draft prerelease
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag != '' }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          set -euo pipefail
+
+          if [[ ! "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+-rx\.[0-9]+$ ]]; then
+            echo "Release tag must match vMAJOR.MINOR.PATCH-rx.NUMBER." >&2
+            exit 1
+          fi
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $RELEASE_TAG already exists; refusing to replace it." >&2
+            exit 1
+          fi
+
+          notes="$RUNNER_TEMP/rx-msg-release-notes.md"
+          printf '%s\n' \
+            "First RX-msg Android preview, based on the SimpleX Chat 7.0.1 codebase." \
+            "" \
+            "- FOSS ARM64 APK signed with the RX-msg release identity" \
+            "- Android package: com.oldrx.rxmsg" \
+            "- RX-msg product name, launcher icon, and product-facing UI" \
+            "- Automated checks for package identity, version, ARM64 native libraries, signature certificate, and SHA-256 checksum" \
+            "" \
+            "This is a draft prerelease pending installation and messaging smoke tests on a physical Android device." \
+            > "$notes"
+
+          gh release create "$RELEASE_TAG" \
+            dist/*.apk \
+            dist/SHA256SUMS \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "RX-msg ${RELEASE_TAG#v}" \
+            --notes-file "$notes" \
+            --draft \
+            --prerelease
